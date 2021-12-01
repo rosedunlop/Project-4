@@ -5,7 +5,7 @@ from rest_framework.views import APIView
 from rest_framework.response import Response
 from rest_framework import status
 from .models import Review
-from .serializers import ReviewSerializer
+from .serializers import ReviewSerializer, PopulatedReviewSerializer
 
 
 # Create your views here.
@@ -16,7 +16,7 @@ class ReviewListView(APIView):
     def get(self, request):
         try:
             reviews = Review.objects.all()
-            serialized_review = ReviewSerializer(reviews, many=True)
+            serialized_review = PopulatedReviewSerializer(reviews, many=True)
         except:
             return Response(status=status.HTTP_500_INTERNAL_SERVER_ERROR)
         return Response(serialized_review.data, status=status.HTTP_200_OK)
@@ -28,7 +28,7 @@ class ReviewListView(APIView):
             return Response(status=status.HTTP_500_INTERNAL_SERVER_ERROR)
 
         if review.is_valid():
-            review.save()
+            review.save(owner=[request.user])
             return Response(review.data, status=status.HTTP_201_CREATED)
         else:
             return Response(review.errors, status=status.HTTP_422_UNPROCESSABLE_ENTITY)
@@ -45,7 +45,7 @@ class ReviewDetailView(APIView):
 
     def get(self, request, pk):
         review = Review.objects.get(id=pk)
-        serialized_review = ReviewSerializer(review)
+        serialized_review = PopulatedReviewSerializer(review)
         return Response(serialized_review.data, status=status.HTTP_200_OK)
 
     def put(self, request, pk):

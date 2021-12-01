@@ -6,6 +6,7 @@ from rest_framework.response import Response
 from rest_framework import status
 from .models import Product
 from .serializers import ProductSerializer, PopulatedProductSerializer
+from rest_framework.permissions import IsAuthenticatedOrReadOnly
 
 # Create your views here.
 
@@ -22,18 +23,20 @@ class ProductListView(APIView):
 
     def post(self, request):
         try:
-            product = PopulatedProductSerializer(data=request.data)
+            product = ProductSerializer(data=request.data)
         except:
             return Response(status=status.HTTP_500_INTERNAL_SERVER_ERROR)
 
         if product.is_valid():
-            product.save()
+            product.save(owner=[request.user])
             return Response(product.data, status=status.HTTP_201_CREATED)
         else:
             return Response(product.errors, status=status.HTTP_422_UNPROCESSABLE_ENTITY)
 
 
 class ProductDetailView(APIView):
+    permission_classes = (IsAuthenticatedOrReadOnly, )
+
     def get(self, request, pk):
         try:
             product = Product.objects.get(id=pk)
@@ -53,7 +56,7 @@ class ProductDetailView(APIView):
     def put(self, request, pk):
         try:
             product = Product.objects.get(id=pk)
-            updated_product = PopulatedProductSerializer(
+            updated_product = ProductSerializer(
                 product, data=request.data, partial=True)
         except:
             return Response(status=status.HTTP_500_INTERNAL_SERVER_ERROR)

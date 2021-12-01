@@ -1,6 +1,7 @@
+from jwt_auth.serializers import UserSerializer
 from rest_framework import serializers
 from .models import Product
-from reviews.serializers import ReviewSerializer
+from reviews.serializers import PopulatedReviewSerializer
 
 
 class ProductSerializer(serializers.ModelSerializer):
@@ -10,4 +11,5 @@ class ProductSerializer(serializers.ModelSerializer):
 
 
 class PopulatedProductSerializer(ProductSerializer):
-    review_set = ReviewSerializer(read_only=True, many=True)
+    review_set = PopulatedReviewSerializer(read_only=True, many=True)
+    owner = UserSerializer(read_only=True)

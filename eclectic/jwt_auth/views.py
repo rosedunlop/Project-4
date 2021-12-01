@@ -8,7 +8,7 @@ from rest_framework.exceptions import PermissionDenied
 from django.contrib.auth import get_user_model
 from django.conf import settings
 import jwt
-from .serializers import PopulatedUserSerializer, UserSerializer
+from .serializers import UserSerializer
 User = get_user_model()
 
 

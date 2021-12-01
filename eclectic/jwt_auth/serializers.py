@@ -1,11 +1,10 @@
 from rest_framework import serializers
-from django.contrib.auth import get_user_model
 import django.contrib.auth.password_validation as validations
 from django.contrib.auth.hashers import make_password
 from django.core.exceptions import ValidationError
 
 from products.serializers import ProductSerializer
-User = get_user_model()
+from .models import User
 
 
 class UserSerializer(serializers.ModelSerializer):
@@ -33,8 +32,4 @@ class UserSerializer(serializers.ModelSerializer):
     class Meta:
         model = User
         fields = ('username', 'email', 'password',
-                  'password_confirmation', 'profile_image')
-
-
-class PopulatedUserSerializer(UserSerializer):
-    wish_list = ProductSerializer(many=True)
+                  'password_confirmation', 'profile_image', 'wish_list')
