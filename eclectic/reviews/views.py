@@ -28,7 +28,7 @@ class ReviewListView(APIView):
             return Response(status=status.HTTP_500_INTERNAL_SERVER_ERROR)
 
         if review.is_valid():
-            review.save(owner=[request.user])
+            review.save(owner=request.user)
             return Response(review.data, status=status.HTTP_201_CREATED)
         else:
             return Response(review.errors, status=status.HTTP_422_UNPROCESSABLE_ENTITY)
@@ -40,6 +40,8 @@ class ReviewDetailView(APIView):
             review = Review.objects.get(id=pk)
         except:
             return Response(status=status.HTTP_500_INTERNAL_SERVER_ERROR)
+        if review.owner != request.user:
+            raise PermissionDenied()
         review.delete()
         return Response(status=status.HTTP_204_NO_CONTENT)
 
@@ -55,7 +57,8 @@ class ReviewDetailView(APIView):
                 review, data=request.data, partial=True)
         except:
             return Response(status=status.HTTP_500_INTERNAL_SERVER_ERROR)
-
+        if updated_review.owner != request.user:
+            raise PermissionDenied()
         if updated_review.is_valid():
             updated_review.save()
             return Response(updated_review.data, status=status.HTTP_202_ACCEPTED)

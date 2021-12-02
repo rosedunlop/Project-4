@@ -1,4 +1,5 @@
 import re
+from django.core.exceptions import PermissionDenied
 from django.shortcuts import render
 from django.http.response import HttpResponse
 from rest_framework.views import APIView
@@ -28,7 +29,7 @@ class ProductListView(APIView):
             return Response(status=status.HTTP_500_INTERNAL_SERVER_ERROR)
 
         if product.is_valid():
-            product.save(owner=[request.user])
+            product.save(owner=request.user)
             return Response(product.data, status=status.HTTP_201_CREATED)
         else:
             return Response(product.errors, status=status.HTTP_422_UNPROCESSABLE_ENTITY)
@@ -48,9 +49,11 @@ class ProductDetailView(APIView):
     def delete(self, request, pk):
         try:
             product = Product.objects.get(id=pk)
-            product.delete()
         except:
             return Response(status=status.HTTP_500_INTERNAL_SERVER_ERROR)
+        if product.owner != request.user:
+            raise PermissionDenied()
+        product.delete()
         return Response(status=status.HTTP_204_NO_CONTENT)
 
     def put(self, request, pk):
@@ -60,6 +63,9 @@ class ProductDetailView(APIView):
                 product, data=request.data, partial=True)
         except:
             return Response(status=status.HTTP_500_INTERNAL_SERVER_ERROR)
+
+        if product.owner != request.user:
+            raise PermissionDenied()
 
         if updated_product.is_valid():
             updated_product.save()
