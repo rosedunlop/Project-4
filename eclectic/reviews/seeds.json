@@ -1,0 +1,12 @@
+[
+{
+  "model": "reviews.review",
+  "pk": 2,
+  "fields": {
+    "text": "This is a test",
+    "rating": 5,
+    "product": 1,
+    "owner": 1
+  }
+}
+]

@@ -1,0 +1,66 @@
+[
+{
+  "model": "products.product",
+  "pk": 1,
+  "fields": {
+    "name": "Straight Empire Printed Linen Ikat Shade",
+    "type": "Lampshade",
+    "description": "A gathered straight empire shade in a beautiful ikat pattern that we think borrows a few ideas from the colours of medieval heraldry - anyway, its rather lovely and it's hand-made from soft natural linen. With a warm cream fabric lining. Class.",
+    "image_one": "https://thumbor-gc.tomandco.uk/unsafe/1154x1154/filters:upscale():fill(white)/https://www.pooky.com/static/media/catalog/product/L/S/LSSEM245LIKHERTEA_OFF_1596202152_1.jpg",
+    "image_two": "https://thumbor-gc.tomandco.uk/unsafe/1154x1154/filters:upscale():fill(white)/https://www.pooky.com/static/media/catalog/product/l/i/likhertea_2_2.jpg",
+    "brand": "Pooky",
+    "url": "https://www.pooky.com/lampshades/45cm-straight-empire-printed-linen-ikat-shade-in-teal-heraldic#.",
+    "price": 118,
+    "colour": "Teal Heraldic",
+    "owner": 1
+  }
+},
+{
+  "model": "products.product",
+  "pk": 2,
+  "fields": {
+    "name": "Straight Empire Gathered Lampshade",
+    "type": "Lampshade",
+    "description": "A soft cotton shade block-printed by hand by incredibly skilled craftspeople in a workshop near Jaipur.",
+    "image_one": "https://thumbor-gc.tomandco.uk/unsafe/1154x1154/filters:upscale():fill(white)/https://www.pooky.com/static/media/catalog/product/L/S/LSSEM235BCOCSQ_OFF_1618911559_1.jpg",
+    "image_two": "https://thumbor-gc.tomandco.uk/unsafe/1154x1154/filters:upscale():fill(white)/https://www.pooky.com/static/media/catalog/product/b/c/bcobco_det_1_1.jpg",
+    "brand": "Pooky",
+    "url": "https://www.pooky.com/lampshades/35cm-straight-empire-gathered-lampshade-in-coral-squiggles-block-printed-cotton#.",
+    "price": 62,
+    "colour": "Coral Squiggles",
+    "owner": 1
+  }
+},
+{
+  "model": "products.product",
+  "pk": 3,
+  "fields": {
+    "name": "Straight Empire Gathered Lampshade",
+    "type": "Lampshade",
+    "description": "Our block printed Sher pattern is a small deviation from the usual geometric patterns. A wavy, almost tiger like pattern (the name Sher relates to the big cats in India) sweeps through the pattern. A really nice contemporary take on an old style, that is bold but not overpowering.",
+    "image_one": "https://thumbor-gc.tomandco.uk/unsafe/1154x1154/filters:upscale():fill(white)/https://www.pooky.com/static/media/catalog/product/l/s/LSSEM230BCOSHEANG_OFF.jpg",
+    "image_two": "https://thumbor-gc.tomandco.uk/unsafe/769x769/filters:upscale():fill(white)/https://www.pooky.com/static/media/catalog/product/l/s/lssem230bcosheang_det_off_1.jpg",
+    "brand": "Pooky",
+    "url": "https://www.pooky.com/lampshades/30cm-straight-empire-gathered-lampshade-in-angel-block-printed-cotton#.",
+    "price": 51,
+    "colour": "Angel Block Printed Cotton",
+    "owner": 1
+  }
+},
+{
+  "model": "products.product",
+  "pk": 4,
+  "fields": {
+    "name": "Straight Empire Shade",
+    "type": "Lampshade",
+    "description": "A soft cotton shade block-printed by hand by incredibly skilled craftspeople in a workshop near Jaipur and then pleated and lined. Leaf motifs in a muted crimson and finished with matching tape. ",
+    "image_one": "https://thumbor-gc.tomandco.uk/unsafe/1154x1154/filters:upscale():fill(white)/https://www.pooky.com/static/media/catalog/product/L/S/LSSEM245BCOTULCRI_OFF_1619610676_1.jpg",
+    "image_two": "https://thumbor-gc.tomandco.uk/unsafe/1154x1154/filters:upscale():fill(white)/https://www.pooky.com/static/media/catalog/product/t/l/tlwil100woogrn_l_2_1_14.jpg",
+    "brand": "Pooky",
+    "url": "https://www.pooky.com/lampshades/45cm-straight-empire-shade-in-crimson-tulasi#.",
+    "price": 81,
+    "colour": "Crimson Tulasi",
+    "owner": 1
+  }
+}
+]
