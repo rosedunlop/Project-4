@@ -1,6 +1,7 @@
 import axios from 'axios'
 import React, { useEffect, useState } from 'react'
 import FeaturedProductView from '../components/FeaturedProductView.js'
+import Articles from '../components/Articles.js'
 
 
 const Home = () => {
@@ -50,6 +51,12 @@ const Home = () => {
       </div>
       <div className='home-button'>
         <button>VIEW ALL PRODUCTS</button>
+      </div>
+      <div className='article-cont'>
+        <h2>TRENDING ARTICLES</h2>
+      </div>
+      <div className='articles-container'>
+        <Articles />
       </div>
     </div>  
   )

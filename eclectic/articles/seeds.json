@@ -1,0 +1,26 @@
+[
+{
+    "model": "articles.article",
+    "pk": 1,
+    "fields": {
+      "name": "62 Minimalist Bedroom Ideas That Are Anything But Boring",
+      "url": "https://www.interiorzine.com/2020/06/09/minimalist-bedroom-ideas/",
+      "author": "Interiorzine",
+      "description": "The concept of minimalism is trending quite powerfully on the interior design scene with a good reason for that. Еspecially when it comes to leisure or relaxation zones of the home. Minimalism, as a design approach, focuses on functionality and pure aesthetics, fallowing the guideline of “less is more.” What is more suiting than creating a simple, elegant, and minimalist ambiance for your relaxation space? Our bedrooms are precisely that – a sanctuary for relaxation and comfortр so the pure lines of modern minimalism in decor are perfect for a place clean of unnecessary distractions and excess decorations. Purity for body and soul are suitable teams for modern bedroom decors.",
+      "imageOne": "https://www.interiorzine.com/wp-content/uploads/2020/06/minimalist-bedroom-decor-interiorzine-4.jpg",
+      "imageTwo": "https://www.interiorzine.com/wp-content/uploads/2020/06/minimalist-bedroom-decor-interiorzine-1.jpg"
+    }
+  }, 
+  {
+    "model": "articles.article",
+    "pk": 2,
+    "fields": {
+      "name": "Interior design trends to look out for in 2021",
+      "url": "https://www.independent.co.uk/life-style/interior-design-2021-trends-b1778068.html",
+      "author": "Anya Cooklin-Lofting",
+      "description": "Trends in the homewares market have been duly informed by the persistent, lingering and insidious threat of the Covid-19 pandemic. Home is where we’ve been this year, and home is where, it appears, we’ll be staying until further notice. Spending so much time at home has provided us with the opportunity, pursued or not, to assess what it is that we really need from our homes to improve our lives.",
+      "imageOne": "https://www.interiorzine.com/wp-content/uploads/2020/09/adorable-mid-century-modern-kitchen-design-39.jpg",
+      "imageTwo": "https://static.independent.co.uk/2020/12/23/10/Sharps%2C%20The%20Home%20Collection%2C%20Manhattan%20Home%20Office%20with%20Manhattan%20bedroom%20in%20Dove%20with%20Lilah%20Satin%20Brass%20handles%2C%20from%202%2C000%20%282%29.jpg?width=990&auto=webp&quality=75&crop=982:726,smart"
+    }
+  }
+]

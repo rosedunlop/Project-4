@@ -1,4 +1,4 @@
-import re
+
 from django.core.exceptions import PermissionDenied
 from django.shortcuts import render
 from django.http.response import HttpResponse
