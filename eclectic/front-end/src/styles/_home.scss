@@ -1,0 +1,88 @@
+.home-image {
+  img {
+    height: 85vh;
+    width: 100vw;
+  }
+}
+.container {
+  justify-content: center;
+  display: flex;
+  color: $text;
+
+  .home-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    height: 400px;
+    width: 400px;
+
+    h2 {
+      padding-top: 20px;
+    }
+    .info-para {
+      font-size: 13px;
+      padding-top: 30px;
+    }
+  }
+}
+.featured-cont {
+  display: flex;
+  justify-content: center;
+
+  .featured-description {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    color: $text;
+    p {
+      padding-top: 20px;
+      padding-bottom: 20px;
+      font-size: 15px;
+    }
+    h2 {
+      padding-bottom: 50px;
+    }
+  }
+}
+.home-featured {
+  .featured-products {
+    display: flex;
+    justify-content: space-evenly;
+    color: $text;
+    border-top: 1px solid $border;
+    .single-product {
+      text-align: center;
+      img {
+        height: 300px;
+        width: 300px;
+        object-fit: cover;
+        padding-bottom: 50px;
+      }
+      .textbox {
+        font-size: 14px;
+      }
+    }
+  }
+}
+.home-button {
+  display: flex;
+  justify-content: center;
+  margin-top: 80px;
+  margin-bottom: 30px;
+  button {
+    background: linear-gradient(to right, $button 50%, white 50%);
+    background-size: 200% 100%;
+    background-position: left bottom;
+    color: white;
+    border: 2px solid $button;
+    width: 200px;
+    height: 50px;
+  }
+  button:hover {
+    background-position: right bottom;
+    color: $button;
+    border: 2px solid $button;
+    transition: all 1s ease-in;
+  }
+}
