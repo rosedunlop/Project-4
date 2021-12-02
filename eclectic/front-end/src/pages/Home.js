@@ -2,6 +2,7 @@ import axios from 'axios'
 import React, { useEffect, useState } from 'react'
 import FeaturedProductView from '../components/FeaturedProductView.js'
 import Articles from '../components/Articles.js'
+import { Link } from 'react-router-dom'
 
 
 const Home = () => {
@@ -45,12 +46,12 @@ const Home = () => {
       <div className='home-featured'>
         <div className='featured-products'>
           {filteredProducts.map((product) => (
-            <FeaturedProductView key={product.name} {...product}/>
+            <FeaturedProductView key={product.id} {...product}/>
           ))}  
         </div>
       </div>
       <div className='home-button'>
-        <button>VIEW ALL PRODUCTS</button>
+        <Link to='/products'><button>VIEW ALL PRODUCTS</button></Link>
       </div>
       <div className='article-cont'>
         <h2>TRENDING ARTICLES</h2>
