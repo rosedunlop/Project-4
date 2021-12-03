@@ -1,13 +1,15 @@
 @import "colours";
+@import "../../node_modules/bootstrap/scss/bootstrap.scss";
 @import url("https://fonts.googleapis.com/css2?family=Montserrat");
+@import url("https://fonts.googleapis.com/css2?family=Nanum+Myeongjo:wght@800&display=swap");
 @import "header";
 @import "footer";
 @import "home";
 @import "products";
 @import "singleproduct";
+@import "modal";
 
 * {
   box-sizing: border-box;
   margin: 0;
-  font-family: "Montserrat", sans-serif;
 }

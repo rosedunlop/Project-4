@@ -1,3 +1,6 @@
+.home-container {
+  font-family: "Montserrat", sans-serif;
+}
 .home-image {
   img {
     height: 85vh;
@@ -60,7 +63,9 @@
         padding-bottom: 50px;
       }
       .textbox {
-        font-size: 14px;
+        h4 {
+          font-size: 14px;
+        }
         p {
           padding-top: 10px;
         }
@@ -81,6 +86,7 @@
     border: 2px solid $button;
     width: 200px;
     height: 50px;
+    font-size: 14px;
   }
   button:hover {
     background-position: right bottom;
@@ -127,6 +133,7 @@
         position: relative;
         bottom: 10px;
         color: $text;
+        font-size: 14px;
       }
       button:hover {
         border: 1px solid grey;

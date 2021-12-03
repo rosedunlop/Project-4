@@ -2,16 +2,22 @@
   border-top: 1px solid #e9e9e9;
   border-bottom: 1px solid #e9e9e9;
   .nav-title {
-    padding-top: 20px;
+    padding-top: 30px;
     text-align: center;
     font-weight: 900;
-    font-size: 30px;
+    font-size: 35px;
     color: #95ab7f;
+    font-family: "Nanum Myeongjo", serif;
+    a {
+      text-decoration: none;
+      color: #95ab7f;
+    }
   }
   ul {
     display: flex;
     justify-content: center;
     padding: 20px;
+    font-family: "Montserrat", sans-serif;
 
     li {
       list-style: none;
@@ -27,5 +33,13 @@
         text-decoration: underline;
       }
     }
+  }
+  .login-button {
+    background-color: white;
+    color: $text;
+    border: none;
+  }
+  .login-button:hover {
+    text-decoration: underline;
   }
 }

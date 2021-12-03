@@ -12,7 +12,6 @@ const SingleProduct = ( ) => {
   useEffect(() => {
     const getSingleProduct = async(id) => {
       const { data } = await axios.get(`/api/products/${id}/`)
-      console.log(data)
       setProduct([data])
     }
     getSingleProduct(id)

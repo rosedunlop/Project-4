@@ -1,9 +1,13 @@
+.products-container {
+  font-family: "Montserrat", sans-serif;
+}
 .products {
   margin-top: 100px;
   color: $text;
   text-align: center;
   padding-bottom: 100px;
   border-bottom: 2px solid $border;
+
   p {
     padding-top: 40px;
     font-size: 15px;
@@ -15,6 +19,7 @@
   justify-content: space-around;
   height: 80px;
   color: $text;
+  margin-bottom: 50px;
   p {
     position: relative;
     top: 27px;
@@ -39,6 +44,7 @@
     flex-direction: column;
     justify-content: center;
     color: $text;
+    margin-bottom: 20px;
 
     text-align: center;
     height: 400px;
@@ -50,6 +56,7 @@
     }
     h4 {
       padding-top: 30px;
+      font-size: 15px;
     }
   }
 }

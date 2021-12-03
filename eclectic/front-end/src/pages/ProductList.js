@@ -11,7 +11,7 @@ const ProductList = () => {
     }
     getProducts()
   }, [])
-  console.log(products)
+  
   
   
 
@@ -20,7 +20,7 @@ const ProductList = () => {
       {products.length && (
         <div className='products-container'>
           <div className='products'>
-            <h2>ALL PRODUCTS</h2>
+            <h3>ALL PRODUCTS</h3>
             <p>View the full range of products, ranging from cushions to rugs, lampshades to throws and tableware.</p>                                                                          
           </div>
           <div className='details'>
