@@ -62,5 +62,439 @@
     "colour": "Crimson Tulasi",
     "owner": 1
   }
+},
+{
+  "model": "products.product",
+  "pk": 5,
+  "fields": {
+    "name": "Straight Empire Shade",
+    "type": "Lampshade",
+    "description": "This fabulous fabric is handblocked for us in Jaipur, India, in what is the most inspiring workshop - we played for days with literally hundreds of wooden printing blocks - this is one result from then. A sharp dark blue temple motif, or perhaps a blue flame, or even a genie...whatever it is, it works.",
+    "imageOne": "https://thumbor-gc.tomandco.uk/unsafe/1154x1154/filters:upscale():fill(white)/https://www.pooky.com/static/media/catalog/product/l/s/LSSEM140BCOTEM_OFF.jpg",
+    "imageTwo": "https://thumbor-gc.tomandco.uk/unsafe/1154x1154/filters:upscale():fill(white)/https://www.pooky.com/static/media/catalog/product/l/s/LSSEM140BCOTEM_OFF.jpg",
+    "brand": "Pooky",
+    "url": "https://www.pooky.com/lampshades/40cm-straight-empire-lampshade-in-temple-blue-block-printed-cotton#.",
+    "price": 74,
+    "colour": "Temple Blue Block Printed Cotton",
+    "owner": 1
+  }
+},
+{
+  "model": "products.product",
+  "pk": 6,
+  "fields": {
+    "name": "Pleated Madura Silk Empire Lampshade",
+    "type": "Lampshade",
+    "description": "Make a feature of even the plainest lamp with a stylish, pleated Empire shade, featuring our Ikat-inspired silk print on wild tussah silk. Please note that slubs, inclusions and small ladders are characteristic of raw silk and part of its natural beauty. Additionally, the fabric is hand-printed so there may be differences in shading and occasional pattern skew, which is part of the charm of a handmade product and is not considered a flaw.",
+    "imageOne": "https://www.oka.com/media/catalog/product/2/5/25cm-pleated-madura-silk-empire-lampshade-jjs054mlt-0-01.png?width=498&height=560&canvas=498:560&quality=80&fit=bounds&format=jpeg",
+    "imageTwo": "https://www.oka.com/media/catalog/product/2/5/25cm-pleated-madura-silk-empire-lampshade-jjs054mlt-0-01.png?width=498&height=560&canvas=498:560&quality=80&fit=bounds&format=jpeg",
+    "brand": "Oka",
+    "url": "https://www.oka.com/uk/product/25cm-pleated-madura-silk-empire-lampshade-jjs054mlt-0",
+    "price": 80,
+    "colour": "Red",
+    "owner": 1
+  }
+},
+{
+  "model": "products.product",
+  "pk": 7,
+  "fields": {
+    "name": "Leptoria Drum Lampshade ",
+    "type": "Lampshade",
+    "description": "The handmade frame of the Leptoria Drum Lampshade is finished with a hand-pleated patterned linen, with an aquatic blue design. The textile finish – which is printed in the UK – takes inspiration from abstract patterns found in nature, as well as the ornamental endpapers you might find in antique books.",
+    "imageOne": "https://www.oka.com/media/catalog/product/l/e/leptoria-drum-lampshade-35cm-a16096-1-17-1166-74-01.png?width=498&height=560&canvas=498:560&quality=80&fit=bounds&format=jpeg",
+    "imageTwo": "https://www.oka.com/media/catalog/product/l/e/leptoria-drum-lampshade-35cm-a16096-1-17-1166-74-01.png?width=498&height=560&canvas=498:560&quality=80&fit=bounds&format=jpeg",
+    "brand": "Oka",
+    "url": "https://www.oka.com/uk/product/leptoria-drum-lampshade-35cm-a16096-1-17-1166-74",
+    "price": 80,
+    "colour": "Marine Blue",
+    "owner": 1
+  }
+},
+{
+  "model": "products.product",
+  "pk": 8,
+  "fields": {
+    "name": "Sagres Lampshade",
+    "type": "Lampshade",
+    "description": "Cane it? You will with Sagres. This lamp shade adds a Scandi-meets-retro flavour to any table, desk or shelf. Black edging keeps it contemporary – it's an on-trend mix of all three.",
+    "imageOne": "https://img.made.com/image/upload/c_pad,d_madeplusgrey.svg,f_auto,w_982,dpr_2.0,q_auto:good,b_rgb:f5f6f4/v4/catalog/product/asset/c/8/6/0/c8608b4b84e19fced685c87cedafb85fe8ffa963_SHDSAG004BLK_UK_Sagres_Table_Lamp_Shade_Cane_ar3_2_LB01_PS.png",
+    "imageTwo": "https://img.made.com/image/upload/c_pad,d_madeplusgrey.svg,f_auto,w_982,dpr_2.0,q_auto:good,b_rgb:f5f6f4/v4/catalog/product/asset/c/8/6/0/c8608b4b84e19fced685c87cedafb85fe8ffa963_SHDSAG004BLK_UK_Sagres_Table_Lamp_Shade_Cane_ar3_2_LB01_PS.png",
+    "brand": "MADE",
+    "url": "https://www.made.com/sagres-table-lamp-shade-cane",
+    "price": 32,
+    "colour": "Cane",
+    "owner": 1
+  }
+},
+{
+  "model": "products.product",
+  "pk": 9,
+  "fields": {
+    "name": "Signature Scallop Lampshade",
+    "type": "Lampshade",
+    "description": "Matilda’s signature scalloped edges came about as a playful alternative to the straight lines of traditional lampshades. We love the subtlety of the black trim. Lined in cream cotton to create a diffused light, it’ll be sure to brighten any room.",
+    "imageOne": "https://cdn.shopify.com/s/files/1/2869/2938/products/11-MGoad-AW-HR_1000x.jpg?v=1583322357",
+    "imageTwo": "https://cdn.shopify.com/s/files/1/2869/2938/products/11-MGoad-AW-HR_1000x.jpg?v=1583322357",
+    "brand": "Matilda Goad",
+    "url": "https://matildagoad.com/collections/lighting/products/raffia-scallop-lampshade-16-black?gclid=EAIaIQobChMI7fvI2fS99AIVUuztCh183QsJEAQYIiABEgICTfD_BwE",
+    "price": 180,
+    "colour": "Raffia with black trim",
+    "owner": 1
+  }
+},
+{
+  "model": "products.product",
+  "pk": 10,
+  "fields": {
+    "name": "Coastal Cleystripe Lampshade",
+    "type": "Lampshade",
+    "description": "This charming Cleystripe lampshade is ideal for adding a coastal feel and a decorative accent to your home. Crafted from a linen mix and suitable for ceiling and lamp bases, its versatile striped design will fit seamlessly into both living spaces and bedrooms.",
+    "imageOne": "https://johnlewis.scene7.com/is/image/JohnLewis/002377518?$rsp-pdp-port-640$ ",
+    "imageTwo": "https://johnlewis.scene7.com/is/image/JohnLewis/002377518?$rsp-pdp-port-640$ ",
+    "brand": "John Lewis & Partners",
+    "url": "https://www.johnlewis.com/john-lewis-partners-coastal-cleystripe-lampshade/p5291616",
+    "price": 30,
+    "colour": "Grey",
+    "owner": 1
+  }
+},
+{
+  "model": "products.product",
+  "pk": 11,
+  "fields": {
+    "name": "Dandolo Cushion Cover",
+    "type": "Cushion",
+    "description": "The Dandolo is a handmade Venetian-inspired cushion cover featuring appliqué and elegant embroidery, which is applied to a unique hand-painted fabric; colour is applied using a sponge before being dried in the sun, then a pumice stone is rubbed across the fabric to create a hand-brushed effect. Mix and match pieces from the Dandolo range with cushion covers featuring other patterns to create an elegant arrangement.",
+    "imageOne": "https://www.oka.com/media/catalog/product/d/a/dandolo-cushion-cover-extra-large-qch356mlt-0-01.png?width=498&height=560&canvas=498:560&quality=80&fit=bounds&format=jpeg",
+    "imageTwo": "https://www.oka.com/media/catalog/product/d/a/dandolo-cushion-cover-extra-large-qch356mlt-0-11.jpg?width=560&height=560&canvas=560:560&quality=80&fit=bounds",
+    "brand": "Oka",
+    "url": "https://www.oka.com/uk/product/dandolo-cushion-cover-extra-large-qch356mlt-0",
+    "price": 70,
+    "colour": "Multi",
+    "owner": 1
+  }
+}, 
+{
+  
+    "model": "products.product",
+    "pk": 12,
+    "fields": {
+      "name": "Nassau Cushion Cover",
+      "type": "Cushion",
+      "description": "This cotton cushion cover, adorned with a screen-printed abstract floral design, takes several hours to make; the varying shades of red it features can only be applied to the fabric one hue at a time. Named for Oranje Nassau, a key attraction in Lisse, which is part of the Dutch 'flower bulb region', if you look closely enough, you will see small tulip-like flowers in the pattern.",
+      "imageOne": "https://www.oka.com/media/catalog/product/n/a/nassau-cushion-cover-51cmsq-qch499pgoge-0-01.png?width=498&height=560&canvas=498:560&quality=80&fit=bounds&format=jpeg",
+      "imageTwo": "https://www.oka.com/media/catalog/product/n/a/nassau-cushion-cover-51cmsq-qch499pgoge-0-11.jpg?width=560&height=560&canvas=560:560&quality=80&fit=bounds",
+      "brand": "Oka",
+      "url": "https://www.oka.com/uk/product/nassau-cushion-cover-51cmsq-qch499pgoge-0 ",
+      "price": 70,
+      "colour": "Washed Rust",
+      "owner": 1
+    }
+  
+},
+{
+  
+  "model": "products.product",
+  "pk": 13,
+  "fields": {
+    "name": "Caladia Cushion Cover",
+    "type": "Cushion",
+    "description": "Featuring a lively red block-printed pattern, this natural linen pillow cover makes a fun addition to a sofa or chair. While the striped pattern draws attention, the cover's fringed edging lends it a playful finish.",
+    "imageOne": "https://www.oka.com/media/catalog/product/c/a/caladia-pillow-cover-with-fringing-a16558-1-11-1409-37-01.png?width=498&height=560&canvas=498:560&quality=80&fit=bounds&format=jpeg",
+    "imageTwo": "https://www.oka.com/media/catalog/product/c/a/caladia-pillow-cover-with-fringing-a16558-1-11-1409-37-11.png?width=497&height=560&canvas=497:560&quality=80&fit=bounds&format=jpeg",
+    "brand": "Oka",
+    "url": "https://www.oka.com/uk/product/caladia-cushion-cover-with-fringing-a16558-1-11-1409-37",
+    "price": 65,
+    "colour": "Red Madder",
+    "owner": 1
+  }
+
+},
+{
+  
+  "model": "products.product",
+  "pk": 14,
+  "fields": {
+    "name": "Zostera Cushion Cover",
+    "type": "Cushion",
+    "description": "The soft-hued green of the Zostera Cushion Cover's embroidery lends gentle colour, pattern and texture to a sofa, armchair or bed. Understated yet appealing, the wave-like design is an ideal choice for those who prefer to decorate with subtle or traditional palettes",
+    "imageOne": "https://www.oka.com/media/catalog/product/z/o/zostera-pillow-cover-51cmsq-a13398-1-11-1213-37-01.png?width=498&height=560&canvas=498:560&quality=80&fit=bounds&format=jpeg",
+    "imageTwo": "https://www.oka.com/media/catalog/product/z/o/zostera-pillow-cover-51cmsq-a13398-1-11-1213-37-11.png?width=497&height=560&canvas=497:560&quality=80&fit=bounds&format=jpeg",
+    "brand": "Oka",
+    "url": "https://www.oka.com/uk/product/zostera-cushion-cover-a13398-1-11-1213-37",
+    "price": 70,
+    "colour": "Putting Green",
+    "owner": 1
+  }
+
+},
+{
+  
+  "model": "products.product",
+  "pk": 15,
+  "fields": {
+    "name": "Longshan Cushion Cover",
+    "type": "Cushion",
+    "description": "With a muted blue tone that's achieved through a hand-dyeing process, the Longshan's handwoven silk base and subtle block-printed border add gentle colour and understated pattern to a sofa, bed or armchair.",
+    "imageOne": "https://www.oka.com/media/catalog/product/l/o/longshan-cushion-cover-a15420-1-34-1134-42-01.png?width=498&height=560&canvas=498:560&quality=80&fit=bounds&format=jpeg",
+    "imageTwo": "https://www.oka.com/media/catalog/product/l/o/longshan-cushion-cover-a15420-1-34-1134-42-01.png?width=498&height=560&canvas=498:560&quality=80&fit=bounds&format=jpeg",
+    "brand": "Oka",
+    "url": "https://www.oka.com/uk/product/longshan-cushion-cover-a15420-1-34-1134-42",
+    "price": 65,
+    "colour": "Heron Blue",
+    "owner": 1
+  }
+
+},
+{
+  
+  "model": "products.product",
+  "pk": 16,
+  "fields": {
+    "name": "Pampas Pink Cushion",
+    "type": "Cushion",
+    "description": "Pampas brings instant texture to any bed, sofa or chair thanks to its chunky stripes and geometric motifs. Combining vibrant pink, orange and green shades this design has been paired with our wonderfully tactile Cocktail Cosmopolitan trim to accentuate the fabrics rugged texture.",
+    "imageOne": "https://assets.andrewmartin.co.uk/images/square-grey/147007-pampas-pink-cocktail-cosmopolitan.jpg",
+    "imageTwo": "https://assets.andrewmartin.co.uk/images/square-grey/147007-pampas-pink-cocktail-cosmopolitan.jpg",
+    "brand": "Andrew Martin",
+    "url": "https://www.andrewmartin.co.uk/cushions/pampas-pink-cocktail-cosmopoliitan-cushion",
+    "price": 180,
+    "colour": "Pink",
+    "owner": 1
+  }
+
+},
+{
+  
+  "model": "products.product",
+  "pk": 17,
+  "fields": {
+    "name": "Glacier Paradise Cushion",
+    "type": "Cushion",
+    "description": "Glacier Paradise is a strong, graphic geometric cushion in pomegranate pink, navy and yellow with contrast piping in ticking stripe, Savannah Paradise. A supple linen blend, handmade in the UK and filled with sustainably sourced duck feather and down. Join us on a journey to the maze-like streets of the Middle East. Cushion pad included.",
+    "imageOne": "https://assets.andrewmartin.co.uk/images/square-grey/23246-andrew-martin-cushions-glacier-paradise-cushion.jpg",
+    "imageTwo": "https://assets.andrewmartin.co.uk/images/square-grey/23246-andrew-martin-cushions-glacier-paradise-cushion.jpg",
+    "brand": "Andrew Martin",
+    "url": "https://www.andrewmartin.co.uk/cushions/glacier-paradise-cushion",
+    "price": 39,
+    "colour": "Glacier",
+    "owner": 1
+  }
+
+},
+{
+  
+  "model": "products.product",
+  "pk": 18,
+  "fields": {
+    "name": "Indus Brick Cushion",
+    "type": "Cushion",
+    "description": "In rich earthy kilim tones, the wide haphazard stripes of Indus Brick have been inspired by the handwoven fabrics from the communities that inhabit the Indus River Basin, and the colours of the snowy peaks that tower over them. Printed onto a textured linen blend, the large print and warm colours will help to create a calm and cosy space in your home.",
+    "imageOne": "https://assets.andrewmartin.co.uk/images/square-grey/204950-indus-brick-cushion-acc3896.jpg",
+    "imageTwo": "https://assets.andrewmartin.co.uk/images/square-grey--large/216028-soukseawallpaper-indusbrickcushionlifestyle.jpg",
+    "brand": "Andrew Martin",
+    "url": "https://www.andrewmartin.co.uk/cushions/indus-brick-cushion",
+    "price": 82,
+    "colour": "Brick",
+    "owner": 1
+  }
+
+},
+{
+  
+  "model": "products.product",
+  "pk": 19,
+  "fields": {
+    "name": "Kambera Sea Cushion",
+    "type": "Cushion",
+    "description": "Kambera is a circular ikat style design in a calming aqua tone with textured velvet piping. Inspired by the traditional dying technique that is popular in cultures across the globe, these cushions have been printed in the UK and are a great way of incorporating pattern and colour into your interiors scheme.",
+    "imageOne": "https://assets.andrewmartin.co.uk/images/square-grey--large/215715-kambera-sea-web-optimised.jpg",
+    "imageTwo": "https://assets.andrewmartin.co.uk/images/square-grey/107277-kambera-sea-corner-web-optimised.jpg",
+    "brand": "Andrew Martin",
+    "url": "https://www.andrewmartin.co.uk/cushions/kambera-sea-cushion",
+    "price": 48.75,
+    "colour": "Sea",
+    "owner": 1
+  }
+
+},
+{
+  
+  "model": "products.product",
+  "pk": 20,
+  "fields": {
+    "name": "Deep Red Silk Ikat Cushion",
+    "type": "Cushion",
+    "description": "Our fabulous Limited Edition cushions are made from hand woven silk Ikat sourced by Birdie in Istanbul and edged in a co-ordinating cotton fan-edge trim. The colours have been chosen to compliment our current Wanderings perfectly and would bring a touch of Middle Eastern style to any interior.",
+    "imageOne": "https://cdn.shopify.com/s/files/1/2601/7430/products/WEB-10-IKAT_1000x.jpg?v=1637067182",
+    "imageTwo": "https://cdn.shopify.com/s/files/1/2601/7430/products/WEB-10-IKAT_1000x.jpg?v=1637067182",
+    "brand": "Birdie Fortescue",
+    "url": "https://birdiefortescue.co.uk/collections/cushions/products/limited-edition-red-silk-ikat-cushion",
+    "price": 85,
+    "colour": "Red",
+    "owner": 1
+  }
+
+},
+{
+  
+  "model": "products.product",
+  "pk": 21,
+  "fields": {
+    "name": "Chinese Batik Cushion",
+    "type": "Cushion",
+    "description": "Our Chinese Batik cushions are made from 20th Century homespun cotton which has been indigo resist-dyed with stencilled patterns of stylised flowers and birds which symbolises health, wealth and long life in Chinese culture.",
+    "imageOne": "https://cdn.shopify.com/s/files/1/2601/7430/products/7167CC_1000x.jpg?v=1634033950",
+    "imageTwo": "https://cdn.shopify.com/s/files/1/2601/7430/products/7167CC_1000x.jpg?v=1634033950",
+    "brand": "Birdie Fortescue",
+    "url": "https://birdiefortescue.co.uk/collections/cushions/products/limited-edition-chinese-batik-cushion-v",
+    "price": 120,
+    "colour": "Blue",
+    "owner": 1
+  }
+
+},
+{
+  
+  "model": "products.product",
+  "pk": 22,
+  "fields": {
+    "name": "Bordered Himzett Cushion",
+    "type": "Cushion",
+    "description": "The stitching on our intricately embroidered Bordered Himzett cushions was inspired by traditional folk designs from Western Ukraine. Contrast piped with velvet backs, we like to pair these cushions with our coordinating Catifea pleated and bordered velvet cushions. For an easy room refresh, style with a Ghapala Jute Rug, Twisted Table Lamps and Bel lampshades.",
+    "imageOne": "https://cdn.shopify.com/s/files/1/2601/7430/products/WEB-Blue-_-Red---Bordered-Himzett-Cushion_1000x.jpg?v=1631606718",
+    "imageTwo": "https://cdn.shopify.com/s/files/1/2601/7430/products/LOW_DRAWING_ROOM_LANDSCAPE_1000x.jpg?v=1636477503",
+    "brand": "Birdie Fortescue",
+    "url": "https://birdiefortescue.co.uk/collections/cushions/products/bordered-himzett-cushion-red-blue",
+    "price": 80,
+    "colour": "Red/Blue",
+    "owner": 1
+  }
+
+},
+{
+  
+  "model": "products.product",
+  "pk": 23,
+  "fields": {
+    "name": "Shibori Cushion",
+    "type": "Cushion",
+    "description": "These hand made cushions have been created using the traditional Shibori technique which is a form of resist or tie-dyeing. Available in a rich pink and blue to tie in with other cushions in the Damascene collection, these softly patterned textiles work well in both traditional and contemporary schemes. These stylish cushions have been made for us by the Jayshree organisation in Assam, who work to provide employment for struggling families. Jayshree started its journey with a small group of makers weaving and dyeing handloom textiles. The organisation has now expanded to 40 - 50 individuals who are constantly innovating and experimenting with new techniques and products. We are very pleased to be able to support Jayshree and contribute to its valuable work in the community.",
+    "imageOne": "https://cdn.shopify.com/s/files/1/2601/7430/products/WEB-blue-shibori-60x40_1000x.jpg?v=1615471114",
+    "imageTwo": "https://cdn.shopify.com/s/files/1/2601/7430/products/WEB-blue-shibori-60x40-back_1000x.jpg?v=1615471114",
+    "brand": "Birdie Fortescue",
+    "url": "https://birdiefortescue.co.uk/collections/cushions/products/shibori-cushion-blue",
+    "price": 90,
+    "colour": "Blue",
+    "owner": 1
+  }
+
+},
+{
+  
+  "model": "products.product",
+  "pk": 24,
+  "fields": {
+    "name": "Jaipur Acorn Coral Cushion",
+    "type": "Cushion",
+    "description": "Add some colour to your home or garden with these fabulous, Indian inspired cushions. Printed on on-trend coral with a simple acorn design, our Jaipur cushions are water resistant, machine washable and stain resistant.",
+    "imageOne": "https://cdn.shopify.com/s/files/1/0891/5528/products/Coral_Acorn_01_5d44a72f-d81d-464e-9ede-650e6dc98953_1200x.progressive.jpg?v=1561478068",
+    "imageTwo": "https://cdn.shopify.com/s/files/1/0891/5528/products/Coral_Acorn_01_5d44a72f-d81d-464e-9ede-650e6dc98953_1200x.progressive.jpg?v=1561478068",
+    "brand": "Weaver Green",
+    "url": "https://www.weavergreen.com/products/jaipur-acorn-coral-cushioncurrency=GBP&variant=29179112489029&utm_medium=cpc&utm_source=google&utm_campaign=Google%20Shopping&utm_campaign=gs-2018-10-23&utm_source=google&utm_medium=smart_campaign&gclid=EAIaIQobChMI_pnhysLA9AIVDu3tCh2RiwdhEAQYBSABEgI1lfD_BwE",
+    "price": 45,
+    "colour": "Coral",
+    "owner": 1
+  }
+
+},
+{
+  
+  "model": "products.product",
+  "pk": 25,
+  "fields": {
+    "name": "Kili Cushion",
+    "type": "Cushion",
+    "description": "If you're in the mood to add something extra to your sofa, this one's for you. Velvet? Check. Contrasting tassel trim? You got it. Kili brings the glam to sofas and chairs alike. It's available in burgundy, teal and green, but we won't judge if you get all three colours.",
+    "imageOne": "https://img.made.com/image/upload/c_pad,d_madeplusgrey.svg,f_auto,w_982,dpr_2.0,q_auto:good,b_rgb:f5f6f4/v4/catalog/product/asset/c/3/5/f/c35f6313a76a87ad79f524bf3c3ca0d451b41de7_CUSKLI003GRE_UK_Kili_Set_of_2_Fringed_Velvet_Cushions_45x45cm_Dark_Green_Pink_ar3_2_LB01_PS.png",
+    "imageTwo": "https://img.made.com/image/upload/c_pad,d_madeplusgrey.svg,f_auto,w_982,dpr_2.0,q_auto:good,b_rgb:f5f6f4/v4/catalog/product/asset/c/4/3/c/c43c74b6860456bd36638b90e7238cf6ecd953a7_CUSKLI003GRE_UK_Kili_Set_of_2_Fringed_Velvet_Cushions_45x45cm_Dark_Green_Pink_ar3_2_LB02_LS.jpg",
+    "brand": "MADE",
+    "url": "https://www.made.com/kili-set-of-2-fringed-cushions-45-x-45cm-dark-green-pink",
+    "price": 39,
+    "colour": "Green/Pink",
+    "owner": 1
+  }
+
+},
+{
+  
+  "model": "products.product",
+  "pk": 26,
+  "fields": {
+    "name": "Small Darica Rug",
+    "type": "Rug",
+    "description": "Bring warmth to your scheme using our Small Darica Rug – a hand-tufted wool rug in soft, autumnal colours. Our take on the traditional Turkish floor covering features a bold pattern that combines a series of classic motifs; the 'yildiz' (star), representing happiness; kocboynuzu (the ram’s horn) that denotes power; and el (the hand), which offers protection from the evil eye. The wool used to make this rug has been vegetable dyed and treated with a herbal wash, before being left to dry naturally in the sun; the outcome of this process is a beautiful, antiqued finish",
+    "imageOne": "https://www.oka.com/media/catalog/product/d/a/darica-rug-small-tfu117pemlt-0-01.png?width=498&height=560&canvas=498:560&quality=80&fit=bounds&format=jpeg",
+    "imageTwo": "https://www.oka.com/media/catalog/product/d/a/darica-rug-small-tfu117pemlt-0-01.png?width=498&height=560&canvas=498:560&quality=80&fit=bounds&format=jpeg",
+    "brand": "Oka",
+    "url": "https://www.oka.com/uk/product/darica-rug-small-tfu117pemlt-0",
+    "price": 850,
+    "colour": "Multi",
+    "owner": 1
+  }
+},
+{
+  
+  "model": "products.product",
+  "pk": 27,
+  "fields": {
+    "name": "Florine Rug",
+    "type": "Rug",
+    "description": "This hand-knotted rug is sure to start conversations wherever you place it; its striking red and taupe geometric pattern looks, to us, like a murmuration of starlings. But that's just one opinion.",
+    "imageOne": "https://www.oka.com/media/catalog/product/f/l/florine-rug-a16419-1-10-1218-10-01.png?quality=80&fit=bounds&height=&width=&format=jpeg",
+    "imageTwo": "https://www.oka.com/media/catalog/product/f/l/florine-rug-a16419-1-10-1218-10-11.png?width=497&height=560&canvas=497:560&quality=80&fit=bounds&format=jpeg",
+    "brand": "Oka",
+    "url": "https://www.oka.com/uk/product/florine-rug-a16419-1-10-1218-10",
+    "price": 2995,
+    "colour": "Red/Dark Taupe",
+    "owner": 1
+  }
+},
+{
+  
+  "model": "products.product",
+  "pk": 28,
+  "fields": {
+    "name": "Merinid Rug",
+    "type": "Rug",
+    "description": "Both the Merinid's colour palette and pattern remind us of the blue and white Moroccan tiles which are used to decorate buildings, parks, fountains and walls across the country. If you like the aesthetic of tiles but want something that will be soft and warm underfoot, a patterned rug like the Merinid is a good way to go.",
+    "imageOne": "https://www.oka.com/media/catalog/product/m/e/merinid-rug-a15240-1-23-1483-10-01.png?width=498&height=560&canvas=498:560&quality=80&fit=bounds&format=jpeg",
+    "imageTwo": "https://www.oka.com/media/catalog/product/m/e/merinid-rug-a15240-1-23-1483-10-11.jpg?width=560&height=560&canvas=560:560&quality=80&fit=bounds",
+    "brand": "Oka",
+    "url": "https://www.oka.com/uk/product/merinid-rug-a15240-1-23-1483-10",
+    "price": 1495,
+    "colour": "Lapis",
+    "owner": 1
+  }
+},
+{
+  
+  "model": "products.product",
+  "pk": 29,
+  "fields": {
+    "name": "Bishkek Turkish-Design Rug",
+    "type": "Rug",
+    "description": "A stunning, feature rug that faithfully references antique Turkish design. Pretty florals on a cream background will work in a living room, conservatory or bedroom. A chain stitch design in pure wool ensures warmth underfoot and a hardwearing finish.",
+    "imageOne": "https://www.oka.com/media/catalog/product/b/i/bishkek-turkish-design-rug-wool-tf228-01.png?width=498&height=560&canvas=498:560&quality=80&fit=bounds&format=jpeg",
+    "imageTwo": "https://www.oka.com/media/catalog/product/b/i/bishkek-turkish-design-rug-wool-tf228-11.jpg?width=560&height=560&canvas=560:560&quality=80&fit=bounds",
+    "brand": "Oka",
+    "url": "https://www.oka.com/uk/product/bishkek-turkish-design-rug-wool-tf228",
+    "price": 1995,
+    "colour": "Multi",
+    "owner": 1
+  }
 }
+
+
 ]
