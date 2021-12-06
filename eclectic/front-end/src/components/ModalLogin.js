@@ -2,7 +2,7 @@ import React, { useState } from 'react'
 import Modal from 'react-bootstrap/Modal'
 import Form from 'react-bootstrap/Form'
 import axios from 'axios'
-import { setToken } from '../helpers/auth.js'
+import { setToken, setUserId } from '../helpers/auth.js'
 
 
 const ModalLogin = ({ handleLoginClose, loginShow, setIsLoggedIn }) => {
@@ -31,7 +31,9 @@ const ModalLogin = ({ handleLoginClose, loginShow, setIsLoggedIn }) => {
 
     try {
       const response = await axios(config)
+      console.log(response)
       setToken(response.data.token)
+      setUserId(response.data.id)
       setIsLoggedIn(true)
       setIsError(false)
       handleLoginClose()    

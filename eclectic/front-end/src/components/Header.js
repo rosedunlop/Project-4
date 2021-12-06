@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import { Link } from 'react-router-dom'
-import { removeToken } from '../helpers/auth.js'
+import { removeToken, removeUserId } from '../helpers/auth.js'
 import ModalLogin from './ModalLogin.js'
 import  ModalRegister  from './ModalRegister.js'
 import { useNavigate } from 'react-router-dom'
@@ -18,6 +18,7 @@ const Header = ({ isLoggedIn, setIsLoggedIn }) => {
 
   const handleLogout = () => {
     removeToken()
+    removeUserId()
     setIsLoggedIn(false)
     navigate('/')
     
