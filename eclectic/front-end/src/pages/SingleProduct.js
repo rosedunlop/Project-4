@@ -16,14 +16,15 @@ const SingleProduct = ( ) => {
     }
     getSingleProduct(id)
   }, [id])
-
+  
+  
   
   return (
     <> 
       {product.length && (
         <div className='one-product'>
           {product.map(((prod) => (
-            <SingleProductView key={product.id} {...prod}/>  
+            <SingleProductView key={product.id} {...prod} reviewSet={prod.review_set} setProduct={setProduct}/>  
           )))}  
         </div>
       )}

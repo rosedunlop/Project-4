@@ -3,13 +3,17 @@ import React, { useState } from 'react'
 import { Link } from 'react-router-dom'
 import { getToken, getUserId } from '../helpers/auth.js'
 import { useNavigate } from 'react-router'
+import AddReview from './AddReview.js'
+import Reviews from './Reviews.js'
 
 
 
-const SingleProductView = ({ name, brand, imageOne, imageTwo, price, url, colour, description, id, owner }) => {
+const SingleProductView = ({ name, brand, imageOne, imageTwo, price, url, colour, description, id, owner, reviewSet, setProduct }) => {
   
   const navigate = useNavigate()
   const [error, setError] = useState(false)
+  const [starRating, setStarRating] = useState(null)
+  const [hover, setHover] = useState(null)
 
   const userId = getUserId()
   const ownerId = owner.id.toString()
@@ -68,6 +72,17 @@ const SingleProductView = ({ name, brand, imageOne, imageTwo, price, url, colour
         ) : (
           <></>
         )}
+      </div>
+      <div className='reviews-head'>
+        <h4>{`REVIEWS (${reviewSet.length})`}</h4>
+      </div>
+      <div className='post-review'>
+        <div className='review-form'>
+          <AddReview id={id} setProduct={setProduct} starRating={starRating} setStarRating={setStarRating} hover={hover} setHover={setHover} />
+        </div>
+      </div>
+      <div className='review-list'>   
+        <Reviews reviewSet={reviewSet} />
       </div>
     </>
   )

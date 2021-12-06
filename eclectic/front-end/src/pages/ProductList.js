@@ -11,6 +11,15 @@ const ProductList = () => {
     }
     getProducts()
   }, [])
+  
+  const [userProducts, setUserProducts] = useState([])  
+  useEffect(() => {
+    const getProducts = async () => {
+      const { data } = await axios.get('api/products/')
+      setUserProducts(data.filter(p => p.owner.id !== 1))
+    }
+    getProducts()
+  }, [])
 
   return (
     <> 
@@ -29,6 +38,15 @@ const ProductList = () => {
               <ProductView key={product.id} {...product} />
             ))}        
           </div>
+          <div className='recommended-details'>
+            <h3>RECOMMENDED BY YOU</h3>
+            <p>Products posted by our members that they would like to share with the Eclectic community.</p>
+          </div>
+          <div className='products-list'>
+            {userProducts.map((product) => (
+              <ProductView key={product.id} {...product} />
+            ))}        
+          </div> 
         </div>
       )}  
     </>

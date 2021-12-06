@@ -8,6 +8,7 @@ import SingleProduct from './pages/SingleProduct.js'
 import { getToken } from './helpers/auth.js'
 import PostProduct from './pages/PostProduct.js'
 import ProductEdit from './pages/ProductEdit.js'
+import About from './pages/About.js'
 
 
 function App() {
@@ -30,6 +31,7 @@ function App() {
           <Route path = '/products/:id' element={<SingleProduct />} />
           <Route path = '/products/post' element={<PostProduct />} />
           <Route path='/products' element={<ProductList />} />
+          <Route path='/about' element={<About />} />
           <Route exact path ='/' element={<Home />} />
         </Routes>
       </main>

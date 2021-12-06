@@ -1,6 +1,7 @@
 .one-product {
   display: flex;
-  padding-bottom: 50px;
+  flex-wrap: wrap;
+  padding-bottom: 200px;
   font-family: "Montserrat", sans-serif;
   .image-container {
     width: 50vw;
@@ -96,4 +97,74 @@
 }
 .error {
   color: red;
+}
+.reviews-head {
+  width: 100vw;
+  border-top: 2px solid $border;
+  border-bottom: 2px solid $border;
+  position: relative;
+  top: 100px;
+  padding-top: 50px;
+  padding-bottom: 30px;
+  text-align: center;
+  color: $text;
+}
+.post-review {
+  color: $text;
+  position: relative;
+  border-bottom: 2px solid $border;
+  width: 100vw;
+  position: relative;
+  padding: 20px;
+  top: 150px;
+  padding-bottom: 50px;
+  display: flex;
+  justify-content: center;
+
+  .review-form {
+    width: 40vw;
+    .star-form {
+      padding-bottom: 20px;
+      input {
+        display: none;
+      }
+    }
+    .review-button {
+      margin-top: 20px;
+      width: 140px;
+      height: 40px;
+      border: 2px solid $button;
+      color: white;
+      background-color: $button;
+      font-size: 14px;
+    }
+    .review-button:hover {
+      color: $button;
+      background-color: white;
+    }
+  }
+}
+.review-list {
+  width: 100vw;
+  position: relative;
+  top: 150px;
+  padding: 20px;
+  .review-card {
+    margin-bottom: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    .card {
+      margin-bottom: 20px;
+      margin-left: 40px;
+      color: $text;
+      .foot {
+        font-size: 11px;
+        text-align: end;
+      }
+      .text-card {
+        font-size: 13px;
+      }
+    }
+  }
 }
