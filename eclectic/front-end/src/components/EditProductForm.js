@@ -1,10 +1,11 @@
-import React, { useState } from 'react'
+import React, { useState, useEffect } from 'react'
+import { useNavigate, useParams } from 'react-router'
 import Form from 'react-bootstrap/Form'
 import axios from 'axios'
 import { getToken } from '../helpers/auth.js'
-import { useNavigate } from 'react-router'
 
-const PostProductForm = () => {
+
+const EditProductForm = () => {
   const [data, setData] = useState({
     name: '',
     type: '',
@@ -16,31 +17,43 @@ const PostProductForm = () => {
     price: null,
     colour: '',
   })
+  
   const [isError, setIsError] = useState(false)
   const navigate = useNavigate()
-    
+  const { id } = useParams()
+
+  useEffect(() => {
+    const getSingleProduct = async (id) => {
+      const { name, type, description, imageOne, imageTwo, brand, url, price, colour } = (await axios.get(`/api/products/${id}/`)).data
+      setData({ name, type, description, imageOne, imageTwo, brand, url, price, colour })
+    }
+    getSingleProduct(id)
+  }, [id])
+
   const handleSubmit = async (event) => {
     event.preventDefault()
-    
+      
     const config = {
-      method: 'post',
-      url: '/api/products/',
+      method: 'put',
+      url: `/api/products/${id}/`,
       headers: {
         'Authorization': `Bearer ${getToken()}`,  
         'Content-Type': 'application/json',
       },
       data,
     }
+    console.log(data)
+    
     try {
       const response = await axios(config)
       console.log(response.data)
       navigate(`/products/${response.data.id}`)
       setIsError(false)
-        
+          
     } catch (err) {
       console.error(err)
       setIsError(true)
-      
+        
     }
   }
   const handleFormChange = (event) => {
@@ -49,7 +62,7 @@ const PostProductForm = () => {
       ...data,
       [name]: value, 
     })
-  }  
+  } 
   
   return (
     <div className='post-form'>
@@ -104,14 +117,14 @@ const PostProductForm = () => {
               <></>
             )}
             <button variant="primary" type="submit">
-              SUBMIT
+              EDIT
             </button>
           </div>
         </div>
       </Form>      
-    
+  
     </div>
   )
 }
 
-export default PostProductForm
+export default EditProductForm

@@ -30,30 +30,31 @@
     color: $text;
     .brand {
       position: relative;
-      bottom: 100px;
+      bottom: 80px;
     }
     .name {
       position: relative;
-      bottom: 90px;
+      bottom: 70px;
       font-size: 24px;
     }
     .price {
       position: relative;
-      bottom: 80px;
+      bottom: 60px;
     }
     .colour {
       position: relative;
-      bottom: 70px;
+      bottom: 50px;
       font-size: 13px;
     }
     .description-container {
-      width: 400px;
+      width: 550px;
       p {
         font-size: 15px;
       }
       button {
         position: relative;
-        top: 40px;
+        top: 50px;
+        // left: 170px;
         background: linear-gradient(to right, $button 50%, white 50%);
         background-size: 200% 100%;
         background-position: left bottom;
@@ -71,4 +72,28 @@
       }
     }
   }
+  .edit-div {
+    button {
+      position: relative;
+      top: 180px;
+      left: 100px;
+      background-color: $title;
+      color: white;
+      border: 2px solid $title;
+      width: 150px;
+      height: 50px;
+      font-size: 14px;
+    }
+    button:hover {
+      background-color: white;
+      color: $title;
+    }
+    .delete-button {
+      position: relative;
+      left: 150px;
+    }
+  }
+}
+.error {
+  color: red;
 }

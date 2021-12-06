@@ -7,6 +7,7 @@ import ProductList from './pages/ProductList.js'
 import SingleProduct from './pages/SingleProduct.js'
 import { getToken } from './helpers/auth.js'
 import PostProduct from './pages/PostProduct.js'
+import ProductEdit from './pages/ProductEdit.js'
 
 
 function App() {
@@ -25,8 +26,9 @@ function App() {
       <Header isLoggedIn={isLoggedIn} setIsLoggedIn={setIsLoggedIn} />
       <main>
         <Routes>
-          <Route path = '/products/post' element={<PostProduct />} />
+          <Route path= 'products/:id/edit' element={<ProductEdit />} />
           <Route path = '/products/:id' element={<SingleProduct />} />
+          <Route path = '/products/post' element={<PostProduct />} />
           <Route path='/products' element={<ProductList />} />
           <Route exact path ='/' element={<Home />} />
         </Routes>

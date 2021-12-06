@@ -44,7 +44,7 @@
     flex-direction: column;
     justify-content: center;
     color: $text;
-    margin-bottom: 20px;
+    margin-bottom: 40px;
 
     text-align: center;
     height: 400px;
@@ -53,10 +53,24 @@
       width: 300px;
       height: 300px;
       align-self: center;
+      object-fit: cover;
     }
     h4 {
       padding-top: 30px;
       font-size: 15px;
     }
+  }
+}
+.recommended-details {
+  text-align: center;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  color: $text;
+  border-top: 2px solid $border;
+  border-bottom: 2px solid $border;
+  p {
+    font-size: 14px;
   }
 }

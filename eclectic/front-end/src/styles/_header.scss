@@ -42,4 +42,12 @@
   .login-button:hover {
     text-decoration: underline;
   }
+  .logout-button {
+    background-color: white;
+    color: $text;
+    border: none;
+  }
+  .logout-button:hover {
+    text-decoration: underline;
+  }
 }

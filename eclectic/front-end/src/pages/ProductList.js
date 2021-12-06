@@ -11,9 +11,12 @@ const ProductList = () => {
     }
     getProducts()
   }, [])
+
   
+  const adminProducts = products.filter(p => p.owner.username === 'rosedunlop')
   
-  
+  const userProducts = products.filter(p => p.owner.username !== 'rosedunlop')
+
 
   return (
     <> 
@@ -28,12 +31,19 @@ const ProductList = () => {
             <button>FILTER</button>  
           </div>
           <div className='products-list'>
-            {products.map((product) => (
+            {adminProducts.map((product) => (
               <ProductView key={product.id} {...product} />
-            ))}    
-            
+            ))}        
           </div>
-            
+          <div className='recommended-details'>
+            <h3>RECOMMENDED BY YOU</h3>
+            <p>Products posted by our members that they would like to share with the Eclectic community.</p>
+          </div>
+          <div className='products-list'>
+            {userProducts.map((product) => (
+              <ProductView key={product.id} {...product} />
+            ))}        
+          </div>        
         </div>
       )}  
     </>

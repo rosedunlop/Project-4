@@ -16,8 +16,7 @@ const SingleProduct = ( ) => {
     }
     getSingleProduct(id)
   }, [id])
-  
-  
+
   
   return (
     <> 

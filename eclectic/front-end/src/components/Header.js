@@ -35,7 +35,7 @@ const Header = ({ isLoggedIn, setIsLoggedIn }) => {
         <li>WISHLIST</li>
         <li>ABOUT</li>
         {isLoggedIn ? (
-          <button onClick={handleLogout}>LOGOUT</button>
+          <button className='logout-button' onClick={handleLogout}>LOGOUT</button>
         ) : (
           <>
             <button className='login-button' onClick={handleShowLogin}>LOGIN</button>

@@ -99,7 +99,7 @@ export const ModalRegister = ({ registerShow, handleRegisterClose, handleShowLog
             
           </Form.Group>
           <button className="register-button" variant="primary" type="submit">
-             Register
+             REGISTER
           </button>
           {isError ? <p>Error, something went wrong. Passwords must be 8 characters long.</p> : <></>}
         </Form>
