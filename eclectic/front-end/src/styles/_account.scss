@@ -1,0 +1,57 @@
+.title-account {
+  text-align: center;
+  font-family: "Montserrat", sans-serif;
+  color: $text;
+  border-bottom: 1px solid $border;
+  padding-top: 50px;
+  padding-bottom: 30px;
+}
+.account-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  font-family: "Montserrat", sans-serif;
+  color: $text;
+  .profile-pic {
+    display: flex;
+    justify-content: center;
+    padding-top: 20px;
+    .picture {
+      height: 200px;
+      width: 200px;
+      object-fit: cover;
+    }
+  }
+  .account-details {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    padding-top: 30px;
+  }
+}
+.wish-list-account {
+  font-family: "Montserrat", sans-serif;
+  padding-top: 20px;
+  border-top: 1px solid $border;
+  color: $text;
+  .title-wish {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    text-align: center;
+    border-bottom: 1px solid $border;
+  }
+  .single-wish {
+    padding: 20px;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    margin-bottom: 50px;
+  }
+  .para-wish {
+    padding-top: 20px;
+    text-align: center;
+  }
+}

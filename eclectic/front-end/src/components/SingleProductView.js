@@ -8,7 +8,8 @@ import Reviews from './Reviews.js'
 
 
 
-const SingleProductView = ({ name, brand, imageOne, imageTwo, price, url, colour, description, id, owner, reviewSet, setProduct }) => {
+
+const SingleProductView = ({ isLoggedIn, name, brand, imageOne, imageTwo, price, url, colour, description, id, owner, reviewSet, setProduct }) => {
   
   const navigate = useNavigate()
   const [error, setError] = useState(false)
@@ -17,6 +18,27 @@ const SingleProductView = ({ name, brand, imageOne, imageTwo, price, url, colour
 
   const userId = getUserId()
   const ownerId = owner.id.toString()
+  const [isAdded, setIsAdded] = useState(false)
+
+  const handleWishAdd = async (event) => {
+    event.preventDefault()
+
+    const config = {
+      method: 'post',
+      url: `/api/products/${id}/`,
+      headers: { 
+        'Authorization': `Bearer ${getToken()}`,
+      },
+    }
+    try {
+      const response = await axios(config)
+      console.log(response)
+      setIsAdded(true)
+    } catch (err){
+      console.log(err)
+      setIsAdded(false)
+    }
+  }
   
   const handleDelete = async (event) => {
     event.preventDefault()
@@ -58,6 +80,17 @@ const SingleProductView = ({ name, brand, imageOne, imageTwo, price, url, colour
         <div className='description-container'>
           <p>{description}</p>  
           <a href={url}><button>GO TO WEBSITE</button></a>
+          {isLoggedIn ? (
+            <>
+              {isAdded ? (
+                <button className='wishlist-button' >ADDED TO WISHLIST</button>
+              ) : (
+                <button className='wishlist-button' onClick={handleWishAdd}>ADD TO WISHLIST</button>
+              )}
+            </>
+          ) : (
+            <></>
+          )}
         </div>
         {userId === ownerId ? (
           <div className='edit-div'>

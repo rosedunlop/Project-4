@@ -1,0 +1,28 @@
+.canvas-head {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  border-bottom: 2px solid $border;
+}
+.canvas-title {
+  font-family: "Montserrat", sans-serif;
+  color: $text;
+  position: relative;
+  left: 80px;
+  top: 2px;
+}
+.list-canvas {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  font-family: "Montserrat", sans-serif;
+  top: 50px;
+  .link-canvas {
+    margin-bottom: 20px;
+    background-color: white;
+    border: none;
+    color: $text;
+  }
+  .link-canvas:hover {
+    text-decoration: underline;
+  }
+}

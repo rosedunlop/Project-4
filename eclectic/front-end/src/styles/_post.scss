@@ -1,89 +1,180 @@
-.post-heading-cont {
-  color: $text;
-  font-family: "Montserrat", sans-serif;
-  text-align: center;
-  padding-top: 50px;
-  padding-bottom: 30px;
-  display: flex;
-  justify-content: center;
-  border-bottom: 2px solid $border;
+@media screen and (max-width: 480px) {
+  .post-heading-cont {
+    color: $text;
+    font-family: "Montserrat", sans-serif;
+    text-align: center;
+    padding-top: 50px;
+    padding-bottom: 30px;
+    display: flex;
+    justify-content: center;
+    border-bottom: 2px solid $border;
 
-  .post-head {
-    width: 700px;
-    h3 {
-      padding-bottom: 20px;
+    .post-head {
+      width: 700px;
+      h3 {
+        padding-bottom: 20px;
+      }
+      p {
+        font-size: 14px;
+      }
     }
-    p {
-      font-size: 14px;
+  }
+  .post-form {
+    display: flex;
+    font-family: "Montserrat", sans-serif;
+    height: 110vh;
+    border-bottom: 2px solid $border;
+
+    .left-form {
+      width: 40vw;
+      position: relative;
+      height: 500px;
+      top: 100px;
+      left: 10vw;
+      margin-right: 5px;
+      padding: 10px;
+      color: $text;
+    }
+    .right-form {
+      width: 40vw;
+      position: relative;
+      left: 50vw;
+      bottom: 400px;
+      height: 500px;
+      margin-left: 5px;
+      padding: 10px;
+      color: $text;
+      .colour-label {
+        position: relative;
+        top: 10px;
+      }
+      .colour-input {
+        margin-top: 10px;
+      }
+    }
+    .button-form {
+      position: relative;
+      left: 25vw;
+      bottom: 370px;
+      display: flex;
+      justify-content: center;
+      text-align: center;
+      .div {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        .error {
+          color: red;
+        }
+        button {
+          background: linear-gradient(to right, $button 50%, white 50%);
+          background-size: 200% 100%;
+          background-position: left bottom;
+          color: white;
+          border: 2px solid $button;
+          width: 200px;
+          height: 50px;
+          font-size: 14px;
+          margin-bottom: 20px;
+        }
+        button:hover {
+          background-position: right bottom;
+          color: $button;
+          border: 2px solid $button;
+          transition: all 1s ease-in;
+        }
+      }
     }
   }
 }
-.post-form {
-  display: flex;
-  font-family: "Montserrat", sans-serif;
-  // background-color: $border;
-  // background: linear-gradient(white, #b9d3a0);
-  height: 110vh;
-  border-bottom: 2px solid $border;
 
-  .left-form {
-    width: 40vw;
-    position: relative;
-    height: 500px;
-    top: 100px;
-    left: 10vw;
-    margin-right: 5px;
-    padding: 10px;
+@media screen and (min-width: 481px) {
+  .post-heading-cont {
     color: $text;
-  }
-  .right-form {
-    width: 40vw;
-    position: relative;
-    left: 50vw;
-    bottom: 400px;
-    height: 500px;
-    margin-left: 5px;
-    padding: 10px;
-    color: $text;
-    .colour-label {
-      position: relative;
-      top: 10px;
-    }
-    .colour-input {
-      margin-top: 10px;
-    }
-  }
-  .button-form {
-    position: relative;
-    left: 30vw;
-    bottom: 370px;
+    font-family: "Montserrat", sans-serif;
+    text-align: center;
+    padding-top: 50px;
+    padding-bottom: 30px;
     display: flex;
     justify-content: center;
-    text-align: center;
-    .div {
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      .error {
-        color: red;
+    border-bottom: 2px solid $border;
+
+    .post-head {
+      width: 700px;
+      h3 {
+        padding-bottom: 20px;
       }
-      button {
-        background: linear-gradient(to right, $button 50%, white 50%);
-        background-size: 200% 100%;
-        background-position: left bottom;
-        color: white;
-        border: 2px solid $button;
-        width: 200px;
-        height: 50px;
+      p {
         font-size: 14px;
-        margin-bottom: 20px;
       }
-      button:hover {
-        background-position: right bottom;
-        color: $button;
-        border: 2px solid $button;
-        transition: all 1s ease-in;
+    }
+  }
+  .post-form {
+    display: flex;
+    font-family: "Montserrat", sans-serif;
+    height: 110vh;
+    border-bottom: 2px solid $border;
+
+    .left-form {
+      width: 40vw;
+      position: relative;
+      height: 500px;
+      top: 100px;
+      left: 10vw;
+      margin-right: 5px;
+      padding: 10px;
+      color: $text;
+    }
+    .right-form {
+      width: 40vw;
+      position: relative;
+      left: 50vw;
+      bottom: 400px;
+      height: 500px;
+      margin-left: 5px;
+      padding: 10px;
+      color: $text;
+      .colour-label {
+        position: relative;
+        top: 10px;
+      }
+      .colour-input {
+        margin-top: 10px;
+      }
+    }
+    .button-form {
+      position: relative;
+      left: 30vw;
+      bottom: 370px;
+      display: flex;
+      justify-content: center;
+      text-align: center;
+      .div {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        .error {
+          color: red;
+        }
+        button {
+          background: linear-gradient(to right, $button 50%, white 50%);
+          background-size: 200% 100%;
+          background-position: left bottom;
+          color: white;
+          border: 2px solid $button;
+          width: 200px;
+          height: 50px;
+          font-size: 14px;
+          margin-bottom: 20px;
+        }
+        button:hover {
+          background-position: right bottom;
+          color: $button;
+          border: 2px solid $button;
+          transition: all 1s ease-in;
+        }
       }
     }
   }

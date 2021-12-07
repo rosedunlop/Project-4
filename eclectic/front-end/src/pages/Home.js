@@ -3,6 +3,7 @@ import React, { useEffect, useState } from 'react'
 import FeaturedProductView from '../components/FeaturedProductView.js'
 import Articles from '../components/Articles.js'
 import { Link } from 'react-router-dom'
+import Carousel from 'react-bootstrap/Carousel'
 
 
 const Home = () => {
@@ -28,7 +29,17 @@ const Home = () => {
   return (
     <div className='home-container'> 
       <div className='home-image'>
-        <img src='https://cdn.shopify.com/s/files/1/0004/4630/0222/files/HOW_TO_DECORATE_A_LARGE_LIVING_ROOM_-_Large_lounge_room_decorating_ideas_-_LuxDeco.com_2.jpg?v=1597237159'></img>           
+        <Carousel>
+          <Carousel.Item>
+            <img className='carousel-image' src='https://cdn.shopify.com/s/files/1/2601/7430/articles/LOW_NEW_GREEN_DINING_LANDSCAPE_3_1600x.jpg?v=1632994398'></img>           
+          </Carousel.Item>
+          <Carousel.Item >
+            <img className='carousel-image' src='https://cdn.shopify.com/s/files/1/2601/7430/articles/LOW_DRAWING_ROOM_1_1600x.jpg?v=1631789761'></img>           
+          </Carousel.Item>
+          <Carousel.Item>
+            <img className='carousel-image' src='https://cdn.shopify.com/s/files/1/2601/7430/articles/LOW_SNUG_SOFA_1600x.jpg?v=1633603401'></img>           
+          </Carousel.Item>
+        </Carousel>
       </div>
       <div className='container'>
         <div className='home-info'>

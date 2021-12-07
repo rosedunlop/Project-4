@@ -32,19 +32,20 @@ const Header = ({ isLoggedIn, setIsLoggedIn }) => {
       <ul>
         <li><Link to='/products'>PRODUCTS</Link></li>
         <li><Link to='/products/post'>POST</Link></li>
-        <li>TRENDING</li>
-        <li>WISHLIST</li>
         <li><Link to='/about'>ABOUT</Link></li>
         {isLoggedIn ? (
-          <button className='logout-button' onClick={handleLogout}>LOGOUT</button>
+          <>
+            <button className='logout-button' onClick={handleLogout}>LOGOUT</button>
+            <li><Link to='/account'>ACCOUNT</Link ></li>
+          </>
         ) : (
           <>
             <button className='login-button' onClick={handleShowLogin}>LOGIN</button>
             <ModalLogin setIsLoggedIn={setIsLoggedIn} handleLoginClose={handleLoginClose} handleShowLogin={handleShowLogin} loginShow={loginShow}/>
+            <button className='register-button' onClick={handleShowRegister}>REGISTER</button>
+            <ModalRegister registerShow={registerShow} handleRegisterClose={handleRegisterClose} handleShowLogin={handleShowLogin}/>
           </>
         )}
-        <button className='login-button' onClick={handleShowRegister}>REGISTER</button>
-        <ModalRegister registerShow={registerShow} handleRegisterClose={handleRegisterClose} handleShowLogin={handleShowLogin}/>
       </ul>         
     </nav>
   )

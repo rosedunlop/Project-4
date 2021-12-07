@@ -77,9 +77,11 @@ class ProductDetailView(APIView):
             return Response(updated_product.errors, status=status.HTTP_422_UNPROCESSABLE_ENTITY)
 
     def post(self, request, pk):
-        product = Product.objects.get(id=pk)
-        user = request.user
-        updated_list = user.wish_list.add(product)
-        new_list = PopulatedUserSerializer(user)
-
+        try:
+            product = Product.objects.get(id=pk)
+            user = request.user
+            user.wish_list.add(product)
+            new_list = PopulatedUserSerializer(user)
+        except:
+            return Response(status=status.HTTP_401_UNAUTHORIZED)
         return Response(new_list.data, status=status.HTTP_200_OK)

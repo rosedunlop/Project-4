@@ -88,7 +88,7 @@ const AddReview = ({ id, setProduct, setStarRating, setHover, hover, starRating 
           <Form.Label>Review</Form.Label>
           <Form.Control onChange={handleTextChange} value={text} type='text' as='textarea' style={{ height: '200px' }} placeholder='Leave a review here' />
         </Form.Group>
-        {isError ? ( <p>Error.</p>) : ( <></> )}
+        {isError ? ( <p className='error'>Error. You must have an account to review a product.</p>) : ( <></> )}
         <button className='review-button' value='post' type='submit'>REVIEW</button>
       </Form>     
     </div>

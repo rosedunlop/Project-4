@@ -20,14 +20,14 @@ const Articles = () => {
             <img src={articles[0].imageOne}/>
             <div className='text-article'>
               <h4>{articles[0].name}</h4>
-              <button>VIEW ARTICLE</button>         
+              <a href={articles[0].url}><button>VIEW ARTICLE</button></a>         
             </div>
           </div>
           <div className='article-two'>
             <img src={articles[1].imageOne}/>
             <div className='text-article'>
               <h4>{articles[1].name}</h4>
-              <button>VIEW ARTICLE</button>  
+              <a href={articles[1].url}><button>VIEW ARTICLE</button></a>  
             </div>
           </div>
         </>       

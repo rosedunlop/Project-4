@@ -7,7 +7,7 @@ const Reviews = ({ reviewSet }) => {
   return (
     <div className='review-card'>
       {reviewSet.map((review) => (
-        <Card style={{ width: '38vw' }} className='card' key={review.id}>
+        <Card className='card' key={review.id}>
           <Card.Header>{[...Array(review.rating)].map((star) => {
             return (
               <FaStar key={star} />

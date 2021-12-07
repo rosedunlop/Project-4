@@ -9,6 +9,7 @@ import { getToken } from './helpers/auth.js'
 import PostProduct from './pages/PostProduct.js'
 import ProductEdit from './pages/ProductEdit.js'
 import About from './pages/About.js'
+import Account from './pages/Account.js'
 
 
 function App() {
@@ -28,9 +29,10 @@ function App() {
       <main>
         <Routes>
           <Route path= 'products/:id/edit' element={<ProductEdit />} />
-          <Route path = '/products/:id' element={<SingleProduct />} />
+          <Route path = '/products/:id' element={<SingleProduct isLoggedIn={isLoggedIn} />} />
           <Route path = '/products/post' element={<PostProduct />} />
           <Route path='/products' element={<ProductList />} />
+          <Route path='/account' element={<Account />} />
           <Route path='/about' element={<About />} />
           <Route exact path ='/' element={<Home />} />
         </Routes>

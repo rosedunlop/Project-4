@@ -1,9 +1,9 @@
 [
 {
   "model": "reviews.review",
-  "pk": 2,
+  "pk": 1,
   "fields": {
-    "text": "This is a test",
+    "text": "I highly recommend this lampshade. I bought it two weeks ago for my sitting room and I absolutely love it!",
     "rating": 5,
     "product": 1,
     "owner": 1
