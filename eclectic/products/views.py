@@ -1,10 +1,13 @@
 
+from functools import partial
 from django.core.exceptions import PermissionDenied
 from django.shortcuts import render
 from django.http.response import HttpResponse
 from rest_framework.views import APIView
 from rest_framework.response import Response
 from rest_framework import status
+
+from jwt_auth.serializers import UserSerializer, PopulatedUserSerializer
 from .models import Product
 from .serializers import ProductSerializer, PopulatedProductSerializer
 from rest_framework.permissions import IsAuthenticatedOrReadOnly
@@ -72,3 +75,11 @@ class ProductDetailView(APIView):
             return Response(updated_product.data, status=status.HTTP_202_ACCEPTED)
         else:
             return Response(updated_product.errors, status=status.HTTP_422_UNPROCESSABLE_ENTITY)
+
+    def post(self, request, pk):
+        product = Product.objects.get(id=pk)
+        user = request.user
+        updated_list = user.wish_list.add(product)
+        new_list = PopulatedUserSerializer(user)
+
+        return Response(new_list.data, status=status.HTTP_200_OK)

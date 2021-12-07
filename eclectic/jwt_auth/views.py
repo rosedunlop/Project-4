@@ -51,14 +51,7 @@ class LoginView(APIView):
 
 class WishListView(APIView):
 
-    def get(self, request, pk):
-        user = User.objects.get(id=pk)
+    def get(self, request):
+        user = request.user
         user_serializer = PopulatedUserSerializer(user)
         return Response(user_serializer.data, status=status.HTTP_200_OK)
-
-    def post(self, request, pk):
-        product = Product.objects.get(id=pk)
-        user = request.user
-
-        updated_wishlist = user.wish_list.save(product)
-        return Response(updated_wishlist.data, status=status.HTTP_200_OK)

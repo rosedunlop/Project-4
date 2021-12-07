@@ -494,7 +494,227 @@
     "colour": "Multi",
     "owner": 1
   }
+},
+{
+  
+  "model": "products.product",
+  "pk": 30,
+  "fields": {
+    "name": "Rhombus Rug",
+    "type": "Rug",
+    "description": "Inspiration for this stylish new rug was taken from a block printed textile seen in Rajasthan. The geometric design makes a bold statement in any space and works particularly well in a hallway or sitting room. Hand woven in a mixture of wool and jute with embroidered jute detail, the design adds a luxurious feel that is perfect for Autumn/Winter. Try styling this Rhombus rug with a mixture of our Bel cushions and Wensum furniture.",
+    "imageOne": "https://cdn.shopify.com/s/files/1/2601/7430/products/56662-Green-Rhombus-Rug-_2_ba022601-be62-4b48-b3ba-9a82a9a52475_1000x.jpg?v=1634286195",
+    "imageTwo": "https://cdn.shopify.com/s/files/1/2601/7430/products/MG_9161_cf764ba5-959d-4b77-b656-3a02a52b6331_1000x.jpg?v=1634226669",
+    "brand": "Birdie Fortescue",
+    "url": "https://birdiefortescue.co.uk/collections/rugs/products/rhombus-rug-green-1",
+    "price": 172,
+    "colour": "Green",
+    "owner": 1
+  }
+},
+{
+  
+  "model": "products.product",
+  "pk": 31,
+  "fields": {
+    "name": "Bellis Suzani Rug",
+    "type": "Rug",
+    "description": "This statement rug has been designed by Birdie and hand-woven & embroidered in Pakistan. The design is a contemporary take on traditional Suzani motifs. The warm colours have been carefully chosen to work with almost any interior palette yet are strong enough to help bring a room scheme together.",
+    "imageOne": "https://cdn.shopify.com/s/files/1/2601/7430/products/WEB-Blue-Suzani_e14c372f-4d0f-49b8-ae26-0fe2c369f24d_1000x.jpg?v=1636217702",
+    "imageTwo": "https://cdn.shopify.com/s/files/1/2601/7430/products/LOW_MASTER_BEDROOM_CHAIR_1000x.jpg?v=1636555870",
+    "brand": "Birdie Fortescue",
+    "url": "https://birdiefortescue.co.uk/collections/rugs/products/bellis-suzani-rug-blue",
+    "price": 795,
+    "colour": "Blue",
+    "owner": 1
+  }
+},
+{
+  
+  "model": "products.product",
+  "pk": 32,
+  "fields": {
+    "name": "Teddy Rug",
+    "type": "Rug",
+    "description": "A bit like a new friend that gets on with all your old pals. Slots in seamlessly as if it's always been that way. Yep, that's what a hand-woven rug can do.",
+    "imageOne": "https://assets.loaf.com/images/product_800/4725427-teddy-rug.jpg",
+    "imageTwo": "https://assets.loaf.com/images/product_800/4639611-teddy-handwoven-floor-rug.jpg",
+    "brand": "Loaf",
+    "url": "https://loaf.com/products/teddy-floor-rug?size=large&colour=oatmeal&gclid=EAIaIQobChMIt5yZpMfA9AIVC-3tCh11ug7rEAQYASABEgJja_D_BwE&slide=2",
+    "price": 465,
+    "colour": "Cream",
+    "owner": 1
+  }
+},
+{
+  
+  "model": "products.product",
+  "pk": 33,
+  "fields": {
+    "name": "Trellis Grapefruit Rug",
+    "type": "Rug",
+    "description": "Give your space a colourful lift with our contemporary take on the traditional Indian Dhurrie. Trellis features a paired back geometric print to incorporate a subtle nod of pattern into your space, available in two sizes with the pattern proportionally represented in each. This lightweight, fully reversible design has been handwoven in India from 100% cotton and is neatly bound with herringbone tape on each end. Each piece is supplied with a pack of pre cut anti-slip underlay to ensure it stays in place.",
+    "imageOne": "https://assets.andrewmartin.co.uk/images/square-grey--large/231064-trellis-grapefruit-180x275.jpg",
+    "imageTwo": "https://assets.andrewmartin.co.uk/images/square-grey/230499-dhurries-lifestyle-1.jpg",
+    "brand": "Andrew Martin",
+    "url": "https://www.andrewmartin.co.uk/homeware/trellis-rug-grapefruit",
+    "price": 375,
+    "colour": "Grapefruit",
+    "owner": 1
+  }
+},
+{
+  
+  "model": "products.product",
+  "pk": 34,
+  "fields": {
+    "name": "Sennah Li Rug",
+    "type": "Rug",
+    "description": "In a beautiful rich indigo hue this rugs graphic abstract pattern makes a striking feature in any room. This rug has been handcrafted from luxurious wool to provide a sumptuously soft feeling underfoot.",
+    "imageOne": "https://assets.andrewmartin.co.uk/images/square-grey--large/216027-sennah.jpg",
+    "imageTwo": "https://assets.andrewmartin.co.uk/images/square-grey--large/216027-sennah.jpg",
+    "brand": "Andrew Martin",
+    "url": "https://www.andrewmartin.co.uk/homeware/rugs/senneh-li",
+    "price": 295,
+    "colour": "Sennah Li",
+    "owner": 1
+  }
+},
+{
+  
+  "model": "products.product",
+  "pk": 35,
+  "fields": {
+    "name": "Rupi Rug",
+    "type": "Rug",
+    "description": "Handwoven from 100% hemp fibres this striking rug displays an ethnic inspired geometric pattern in natural and black tones with white tassel fringing at either end. This beautiful, piece is extremely hardwearing and suits both modern and traditional interiors alike.",
+    "imageOne": "https://assets.andrewmartin.co.uk/images/square-grey--large/227723-rupi-rug.jpg",
+    "imageTwo": "https://assets.andrewmartin.co.uk/images/square-grey/227714-rupi-rug-detail.jpg",
+    "brand": "Andrew Martin",
+    "url": "https://www.andrewmartin.co.uk/homeware/rugs/rupi-rug-5-x-8",
+    "price": 425,
+    "colour": "Rupi",
+    "owner": 1
+  }
+},
+{
+  
+  "model": "products.product",
+  "pk": 36,
+  "fields": {
+    "name": "Gromwell Tumblers",
+    "type": "Tableware",
+    "description": "Purple reigns supreme in this glassware series. This set includes four clear glass tumblers with purple brims.",
+    "imageOne": "https://www.oka.com/media/catalog/product/a/1/a15323-1-13-1209-10_01.png?width=497&height=560&canvas=497:560&quality=80&fit=bounds&format=jpeg",
+    "imageTwo": "https://www.oka.com/media/catalog/product/4/-/4-gromwell-tumblers-a15323-1-13-1209-10-11.jpg?width=560&height=560&canvas=560:560&quality=80&fit=bounds",
+    "brand": "Oka",
+    "url": "https://www.oka.com/uk/product/4-gromwell-tumblers-a15323-1-13-1209-10",
+    "price": 60,
+    "colour": "Purple",
+    "owner": 1
+  }
+},
+{
+  
+  "model": "products.product",
+  "pk": 37,
+  "fields": {
+    "name": "Lavaux Glass Goblets",
+    "type": "Tableware",
+    "description": "A set of four coloured glasses, ideal for adding a burst of colour to your dining table. With a short stem, these glass goblets are perfect for holding water or wine. Mix and match different colours to create a bold and bright glassware collection. A great gift idea.",
+    "imageOne": "https://www.oka.com/media/catalog/product/l/g/lgl124pggrm-0_01_1.png?width=497&height=560&canvas=497:560&quality=80&fit=bounds&format=jpeg",
+    "imageTwo": "https://www.oka.com/media/catalog/product/l/a/lavaux-goblets-set-of-4-lgl124pggrm-0-11.jpg?width=560&height=560&canvas=560:560&quality=80&fit=bounds",
+    "brand": "Oka",
+    "url": "https://www.oka.com/uk/product/lavaux-goblets-set-lgl124pggrm-0",
+    "price": 55,
+    "colour": "Creme de Menthe",
+    "owner": 1
+  }
+},
+{
+  
+  "model": "products.product",
+  "pk": 38,
+  "fields": {
+    "name": "Dalmatian Napkins",
+    "type": "Tableware",
+    "description": "Go dotty for our fun black and white polka dot napkins. Made from 100% cotton, each napkin features a modern spotty monochrome pattern and a contrasting bold red trim. A characterful alternative to traditional white napkins and a really quick and easy way to liven up your table.",
+    "imageOne": "https://www.oka.com/media/catalog/product/t/a/tachete-napkins-set-of-4-ltn011pgmlt-0-01.png?width=498&height=560&canvas=498:560&quality=80&fit=bounds&format=jpeg",
+    "imageTwo": "https://www.oka.com/media/catalog/product/t/a/tachete-napkins-set-of-4-ltn011pgmlt-0-02.png?width=498&height=560&canvas=498:560&quality=80&fit=bounds&format=jpeg",
+    "brand": "Oka",
+    "url": "https://www.oka.com/uk/product/tachete-napkins-set-ltn011pgmlt-0",
+    "price": 65,
+    "colour": "Dalmatian/Red",
+    "owner": 1
+  }
+},
+{
+  
+  "model": "products.product",
+  "pk": 39,
+  "fields": {
+    "name": "Zellige Espresso Cups",
+    "type": "Tableware",
+    "description": "Nothing sets you up for the day quite like a morning espresso or cup of tea served in brightly patterned china. Our Zellige porcelain pieces are hand-painted with either an orange or purple abstract design.",
+    "imageOne": "https://www.oka.com/media/catalog/product/z/e/zellige-espresso-cups-set-of-4-a13392-1-14-1193-10-01.png?width=498&height=560&canvas=498:560&quality=80&fit=bounds&format=jpeg",
+    "imageTwo": "https://www.oka.com/media/catalog/product/z/e/zellige-espresso-cups-set-of-4-a13392-1-14-1193-10-11.jpg?width=560&height=560&canvas=560:560&quality=80&fit=bounds",
+    "brand": "Oka",
+    "url": "https://www.oka.com/uk/product/tachete-napkins-set-ltn011pgmlt-0",
+    "price": 40,
+    "colour": "Orange/Grey",
+    "owner": 1
+  }
+},
+{
+  
+  "model": "products.product",
+  "pk": 40,
+  "fields": {
+    "name": "Blue Tabitha Trellis Tablecloth",
+    "type": "Tableware",
+    "description": "This delightful blue and white trellis Tablecloth with its cerulean blue border is beautiful and versatile with a quintessential English feel.",
+    "imageOne": "https://cdn.shopify.com/s/files/1/0259/9433/0221/products/blue_trellis_tablecloth-4_800x.jpg?v=1634556536",
+    "imageTwo": "https://cdn.shopify.com/s/files/1/0259/9433/0221/products/blue_appleshaw_hero-1_5a47b801-8b48-4c04-884b-fba8688b5b84_1200x.jpg?v=1634244926",
+    "brand": "Mrs Alice",
+    "url": "https://www.mrsalice.com/collections/linen/products/blue-tabitha-tablecloth",
+    "price": 60,
+    "colour": "Blue",
+    "owner": 1
+  }
+},
+{
+  
+  "model": "products.product",
+  "pk": 41,
+  "fields": {
+    "name": "Blue Speckle Water Glasses",
+    "type": "Tableware",
+    "description": "These refined speckled glasses, made in Italy, will add a stylish touch to your glassware collection. Sturdy with a reassuring weight to them, Alice first spotted these glasses while on a magical trip to Lake Como.",
+    "imageOne": "https://cdn.shopify.com/s/files/1/0259/9433/0221/products/blue_speckle_glasses-3_800x.jpg?v=1633597904",
+    "imageTwo": "https://cdn.shopify.com/s/files/1/0259/9433/0221/products/ANL_spring0233_67a0a2ee-bc99-414c-823e-2eaf7ce298b7_1200x.jpg?v=1633597931",
+    "brand": "Mrs Alice",
+    "url": "https://www.mrsalice.com/collections/glassware/products/blue-speckle-water-glasses-set-of-6",
+    "price": 75,
+    "colour": "Blue",
+    "owner": 1
+  }
+},
+{
+  
+  "model": "products.product",
+  "pk": 42,
+  "fields": {
+    "name": "Emerald Hobnail Jug",
+    "type": "Tableware",
+    "description": "Our Emerald Hobnail Jug with its elegant fluted handle and reassuring weight is a stand out piece of the Spring Collection. Made of crystal glass, this unique jug will make a beautiful statement on any table.",
+    "imageOne": "https://cdn.shopify.com/s/files/1/0259/9433/0221/products/Easter_Product_2792_800x.jpg?v=1633599684",
+    "imageTwo": "https://cdn.shopify.com/s/files/1/0259/9433/0221/products/MRSALICE__-43_1200x.jpg?v=1633599690",
+    "brand": "Mrs Alice",
+    "url": "https://www.mrsalice.com/collections/glassware/products/hobnail-jug-light-green",
+    "price": 95,
+    "colour": "Green",
+    "owner": 1
+  }
 }
-
 
 ]
