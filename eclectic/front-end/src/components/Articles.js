@@ -11,7 +11,7 @@ const Articles = () => {
     }
     getArticles()    
   }, [])  
-  console.log(articles)  
+    
   return (
     <>
       {articles.length && (
