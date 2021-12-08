@@ -42,7 +42,6 @@ const EditProductForm = () => {
       },
       data,
     }
-    console.log(data)
     
     try {
       const response = await axios(config)

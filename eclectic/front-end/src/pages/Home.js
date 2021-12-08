@@ -13,10 +13,8 @@ const Home = () => {
     const getAllProducts = async () => {
       try {
         const { data } = await axios.get('/api/products')
-        console.log(data)
         setProducts(data)
-
-              
+                   
       } catch (err) {
         console.log(err)       
       }

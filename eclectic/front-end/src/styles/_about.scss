@@ -24,3 +24,19 @@
     }
   }
 }
+.wish-list-account {
+  .single-wish {
+    .remove-button {
+      background-color: $title;
+      color: white;
+      border: 2px solid $title;
+      font-size: 14px;
+      width: 80px;
+      height: 35px;
+    }
+    .remove-button:hover {
+      background-color: white;
+      color: $title;
+    }
+  }
+}

@@ -10,22 +10,6 @@
       display: flex;
       flex-direction: column;
       justify-content: center;
-      #image-one {
-        width: 250px;
-        height: 250px;
-        position: relative;
-        left: 60px;
-      }
-      .second-image {
-        padding-top: 50px;
-        padding-bottom: 50px;
-        img {
-          width: 80px;
-          height: 80px;
-          position: relative;
-          left: 140px;
-        }
-      }
     }
     .info-container {
       width: 400px;
@@ -178,14 +162,36 @@
     font-family: "Montserrat", sans-serif;
     .image-container {
       width: 50vw;
+      height: 70vh;
       display: flex;
-      flex-direction: column;
       justify-content: center;
       align-items: center;
-      #image-one {
-        width: 500px;
-        height: 500px;
+
+      .carousel-single {
+        height: 350px;
+        width: 350px;
+
+        .carousel-item {
+          img {
+            width: 350px;
+            height: 350px;
+          }
+        }
+
+        .carousel-control-prev-icon {
+          display: none;
+        }
+        .carousel-control-next-icon {
+          display: none;
+        }
+        .carousel-indicators {
+          button {
+            position: relative;
+            top: 90px;
+          }
+        }
       }
+
       .second-image {
         padding-top: 50px;
         img {
@@ -196,6 +202,7 @@
     }
     .info-container {
       width: 50vw;
+      height: 70vh;
       display: flex;
       flex-direction: column;
       justify-content: center;
@@ -204,20 +211,20 @@
       color: $text;
       .brand {
         position: relative;
-        bottom: 80px;
+        bottom: 20px;
       }
       .name {
         position: relative;
-        bottom: 70px;
+        bottom: 20px;
         font-size: 24px;
       }
       .price {
         position: relative;
-        bottom: 60px;
+        bottom: 20px;
       }
       .colour {
         position: relative;
-        bottom: 50px;
+        bottom: 20px;
         font-size: 13px;
       }
       .description-container {
@@ -251,24 +258,27 @@
       }
     }
     .edit-div {
+      width: 100vw;
+      display: flex;
+      justify-content: left;
+      padding-left: 210px;
       button {
-        position: relative;
-        top: 180px;
-        left: 100px;
         background-color: $title;
         color: white;
         border: 2px solid $title;
         width: 150px;
         height: 50px;
         font-size: 14px;
+        margin-right: 5px;
+        margin-top: 40px;
       }
       button:hover {
         background-color: white;
         color: $title;
       }
       .delete-button {
-        position: relative;
-        left: 150px;
+        margin-left: 5px;
+        margin-top: 40px;
       }
     }
   }

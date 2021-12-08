@@ -19,11 +19,11 @@ const Account = () => {
       }
         
       const { data } = await axios(config)
-      setAccount(data)
-      console.log(data)      
+      setAccount(data)      
     } 
     getAccountDetails()
-  }, []) 
+  }, [])
+  
 
     
   return (
@@ -55,7 +55,7 @@ const Account = () => {
         {account.wish_list ? (
           <div className='single-wish'>
             {account.wish_list.map((list) => (
-              <WishList key={account.wish_list.id} {...list} />  
+              <WishList key={account.wish_list.id} {...list} setAccount={setAccount} />  
             ))}  
           </div>
         ) : (

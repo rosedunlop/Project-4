@@ -55,3 +55,12 @@ class WishListView(APIView):
         user = request.user
         user_serializer = PopulatedUserSerializer(user)
         return Response(user_serializer.data, status=status.HTTP_200_OK)
+
+
+class WishListDetailView(APIView):
+    def put(self, request, pk):
+        product = Product.objects.get(id=pk)
+        user = request.user
+        user.wish_list.remove(product)
+        user_serializer = PopulatedUserSerializer(user)
+        return Response(user_serializer.data, status=status.HTTP_202_ACCEPTED)

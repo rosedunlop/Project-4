@@ -5,6 +5,8 @@ import { getToken, getUserId } from '../helpers/auth.js'
 import { useNavigate } from 'react-router'
 import AddReview from './AddReview.js'
 import Reviews from './Reviews.js'
+import Carousel from 'react-bootstrap/Carousel'
+
 
 
 
@@ -19,6 +21,7 @@ const SingleProductView = ({ isLoggedIn, name, brand, imageOne, imageTwo, price,
   const userId = getUserId()
   const ownerId = owner.id.toString()
   const [isAdded, setIsAdded] = useState(false)
+  
 
   const handleWishAdd = async (event) => {
     event.preventDefault()
@@ -63,14 +66,19 @@ const SingleProductView = ({ isLoggedIn, name, brand, imageOne, imageTwo, price,
       setError(true)    
     }   
   }
+  
 
   return (
     <>
       <div className='image-container'>
-        <img src={imageOne} alt='image' id='image-one'/>
-        <div className='second-image'>
-          <img src={imageTwo} alt='image' />    
-        </div>       
+        <Carousel variant="dark" fade className='carousel-single'>
+          <Carousel.Item className='carousel-item' interval={20000}>
+            <img className="d-block w-100" src={imageOne} alt='First Slide' style={{ objectFit: 'cover' }} />
+          </Carousel.Item>
+          <Carousel.Item className='carousel-item' interval={20000}>
+            <img className="d-block w-100" src={imageTwo} alt='Second Slide' style={{ objectFit: 'cover' }}  />
+          </Carousel.Item>
+        </Carousel>       
       </div>
       <div className='info-container'>
         <p className='brand'>{brand.toUpperCase()}</p>
@@ -92,20 +100,20 @@ const SingleProductView = ({ isLoggedIn, name, brand, imageOne, imageTwo, price,
             <></>
           )}
         </div>
-        {userId === ownerId ? (
-          <div className='edit-div'>
-            <Link to={`/products/${id}/edit`}><button>EDIT</button></Link>
-            <button className='delete-button' onClick={handleDelete}>DELETE</button>  
-          </div>
-        ) : (
-          <></>
-        )}
-        {error ? (
-          <p className='error'>Something went wrong. You must own this product if you want to delete it.</p>
-        ) : (
-          <></>
-        )}
       </div>
+      {userId === ownerId ? (
+        <div className='edit-div'>
+          <Link to={`/products/${id}/edit`}><button>EDIT</button></Link>
+          <button className='delete-button' onClick={handleDelete}>DELETE</button>  
+        </div>
+      ) : (
+        <></>
+      )}
+      {error ? (
+        <p className='error'>Something went wrong. You must own this product if you want to delete it.</p>
+      ) : (
+        <></>
+      )}
       <div className='reviews-head'>
         <h4>{`REVIEWS (${reviewSet.length})`}</h4>
       </div>
