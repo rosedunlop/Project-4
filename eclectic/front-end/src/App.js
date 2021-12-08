@@ -10,6 +10,7 @@ import PostProduct from './pages/PostProduct.js'
 import ProductEdit from './pages/ProductEdit.js'
 import About from './pages/About.js'
 import Account from './pages/Account.js'
+import axios from 'axios'
 
 
 function App() {
@@ -22,6 +23,18 @@ function App() {
       setIsLoggedIn(false)
     }
   }, [])
+
+  const [productList, setProductList] = useState([])
+  useEffect(() => {
+    const generalGet = async () => {
+      const { data } = await axios.get('/api/products')
+      console.log(data)
+      setProductList(data)
+
+    }
+    generalGet()
+  }, [])
+
   
   return (
     <BrowserRouter>
@@ -29,7 +42,7 @@ function App() {
       <main>
         <Routes>
           <Route path= 'products/:id/edit' element={<ProductEdit />} />
-          <Route path = '/products/:id' element={<SingleProduct isLoggedIn={isLoggedIn} />} />
+          <Route path = '/products/:id' element={<SingleProduct isLoggedIn={isLoggedIn} productList={productList} />} />
           <Route path = '/products/post' element={<PostProduct />} />
           <Route path='/products' element={<ProductList />} />
           <Route path='/account' element={<Account />} />

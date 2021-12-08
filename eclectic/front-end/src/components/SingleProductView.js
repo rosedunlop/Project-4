@@ -6,13 +6,13 @@ import { useNavigate } from 'react-router'
 import AddReview from './AddReview.js'
 import Reviews from './Reviews.js'
 import Carousel from 'react-bootstrap/Carousel'
+import RelatedProducts from './RelatedProducts.js'
 
 
-
-
-
-const SingleProductView = ({ isLoggedIn, name, brand, imageOne, imageTwo, price, url, colour, description, id, owner, reviewSet, setProduct }) => {
+const SingleProductView = ({ productList, isLoggedIn, name, brand, imageOne, imageTwo, price, url, colour, description, id, owner, reviewSet, setProduct, type }) => {
   
+  const relatedProducts = productList.filter(prod => prod.type === type).slice(0, 4)
+
   const navigate = useNavigate()
   const [error, setError] = useState(false)
   const [starRating, setStarRating] = useState(null)
@@ -114,6 +114,16 @@ const SingleProductView = ({ isLoggedIn, name, brand, imageOne, imageTwo, price,
       ) : (
         <></>
       )}
+      <div className='container-related'>
+        <div className='related-title'>
+          <h4>RELATED PRODUCTS</h4>
+        </div>
+        <div className='related-prods'>
+          {relatedProducts.map((product) => (
+            <RelatedProducts key={product.id} {...product} />
+          ))}
+        </div>
+      </div>
       <div className='reviews-head'>
         <h4>{`REVIEWS (${reviewSet.length})`}</h4>
       </div>

@@ -4,7 +4,7 @@ import { useParams } from 'react-router'
 import SingleProductView from '../components/SingleProductView.js'
 
 
-const SingleProduct = ({ isLoggedIn }) => {
+const SingleProduct = ({ isLoggedIn, productList }) => {
   const [product, setProduct] = useState([])
   const { id } = useParams()  
 
@@ -24,7 +24,7 @@ const SingleProduct = ({ isLoggedIn }) => {
       {product.length && (
         <div className='one-product'>
           {product.map(((prod) => (
-            <SingleProductView key={product.id} {...prod} reviewSet={prod.review_set} isLoggedIn={isLoggedIn} setProduct={setProduct}/>  
+            <SingleProductView key={prod.id} {...prod} productList={productList} reviewSet={prod.review_set} isLoggedIn={isLoggedIn} setProduct={setProduct}/>  
           )))}  
         </div>
       )}
