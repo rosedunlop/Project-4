@@ -52,6 +52,15 @@
     .logout-button:hover {
       text-decoration: underline;
     }
+    .register-button {
+      background-color: white;
+      color: $text;
+      border: none;
+      padding: 20px;
+    }
+    .register-button:hover {
+      text-decoration: underline;
+    }
   }
 }
 

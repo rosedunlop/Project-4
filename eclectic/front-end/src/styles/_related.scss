@@ -1,29 +1,66 @@
-.container-related {
-  width: 100vw;
-  font-family: "Montserrat", sans-serif;
-  color: $text;
-  margin-top: 100px;
-  .related-title {
-    border-top: 1px solid $border;
-    border-bottom: 1px solid $border;
-    text-align: center;
-    padding-top: 50px;
-    padding-bottom: 50px;
-  }
-  .related-prods {
-    display: flex;
-    justify-content: space-evenly;
-    .single-related {
-      width: 300px;
+@media screen and (max-width: 480px) {
+  .container-related {
+    width: 100vw;
+    font-family: "Montserrat", sans-serif;
+    color: $text;
+    margin-top: 100px;
+    .related-title {
+      border-top: 1px solid $border;
+      border-bottom: 1px solid $border;
+      text-align: center;
+      padding-top: 50px;
+      padding-bottom: 50px;
+    }
+    .related-prods {
       display: flex;
       flex-direction: column;
-      justify-content: center;
+      justify-content: space-evenly;
+      padding-left: 35px;
+      .single-related {
+        width: 300px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        img {
+          width: 250px;
+          height: 250px;
+          align-self: center;
+          margin-bottom: 20px;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 481px) {
+  .container-related {
+    width: 100vw;
+    font-family: "Montserrat", sans-serif;
+    color: $text;
+    margin-top: 100px;
+    .related-title {
+      border-top: 1px solid $border;
+      border-bottom: 1px solid $border;
       text-align: center;
-      img {
-        width: 250px;
-        height: 250px;
-        align-self: center;
-        margin-bottom: 20px;
+      padding-top: 50px;
+      padding-bottom: 50px;
+    }
+    .related-prods {
+      display: flex;
+      justify-content: space-evenly;
+      .single-related {
+        width: 300px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        img {
+          width: 250px;
+          height: 250px;
+          align-self: center;
+          margin-bottom: 20px;
+        }
       }
     }
   }
