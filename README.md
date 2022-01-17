@@ -322,35 +322,53 @@ On the final day left I spent it adding additional styling features, such as res
 
 ![](images/homepage-ec.png)
 
+---
+
 **Product Index Page**
 
 ![](images/products.png)
+
+---
 
 **Single Product Page**
 
 ![](images/singleproduct.png)
 
+---
+
 **Reviews**
 
 ![](images/reviews-ec.png)
+
+---
 
 **Edit and Delete Product Options**
 
 ![](images/edit.png)
 
+---
+
 **Edit and Post Product Forms**
 
 ![](images/post.png)
 
+---
+
 ![](images/update.png)
+
+---
 
 **Account and Wish List**
 
 ![](images/account.png)
 
+---
+
 **Register and Login**
 
 ![](images/login-ec.png)
+
+---
 
 ![](images/register-ec.png)
 
