@@ -6,7 +6,7 @@ const Articles = () => {
   
   useEffect(() => {
     const getArticles = async () => {
-      const { data } = await axios.get('/api/articles')
+      const { data } = await axios.get('/api/articles/')
       setArticles(data)
     }
     getArticles()    

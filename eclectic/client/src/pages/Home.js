@@ -12,7 +12,7 @@ const Home = () => {
   useEffect(() => {
     const getAllProducts = async () => {
       try {
-        const { data } = await axios.get('/api/products')
+        const { data } = await axios.get('/api/products/')
         setProducts(data)
                    
       } catch (err) {

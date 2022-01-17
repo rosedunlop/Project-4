@@ -27,7 +27,7 @@ function App() {
   const [productList, setProductList] = useState([])
   useEffect(() => {
     const generalGet = async () => {
-      const { data } = await axios.get('/api/products')
+      const { data } = await axios.get('/api/products/')
       console.log(data)
       setProductList(data)
 
