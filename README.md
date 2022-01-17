@@ -20,6 +20,11 @@ Eclectic is an interior’s app where users can browse trending homeware accesso
 
 **Find the deployed project here:** https://eclectic-project4.herokuapp.com/
 
+If you wish to login and see the all the features of the app you can use the example details:
+
+**Email:** project-4@example.com
+**Password:** example-user
+
 ## The Brief
 
 - Build a Full-Stack application with my own front-end and back-end.
